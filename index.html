@@ -127,17 +127,17 @@
       </a>
       <div class="hidden md:flex gap-8 font-['Newsreader'] text-lg tracking-tight items-center">
         <a class="text-amber-800 dark:text-amber-400 font-medium border-b border-amber-600 pb-1"
-          href="/">Especialidades</a>
+          href="#especialidades">Especialidades</a>
         <a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors pb-1"
-          href="/">Urgencia Detenidos</a>
+          href="#contacto">Urgencia Detenidos</a>
         <a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors pb-1"
-          href="/">Casos de Éxito</a>
+          href="#especialidades">Casos de Éxito</a>
         <a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors pb-1"
           href="#contacto">Contacto</a>
       </div>
-      <button onclick="handleContact('tel')"
+      <button onclick="document.getElementById('contacto').scrollIntoView({behavior: 'smooth'})"
         class="bg-primary text-on-primary px-6 py-2.5 font-medium hover:opacity-90 active:scale-95 transition-all shadow-sm rounded-sm">
-        Urgencia 24hs
+        Consulta Inmediata
       </button>
       <div
         class="bg-gradient-to-r from-transparent via-amber-200/20 to-transparent h-[1px] bottom-0 absolute left-0 right-0">
@@ -171,7 +171,7 @@
               style="font-variation-settings: &quot;FILL&quot; 1;">emergency</span>
             URGENCIA 24hs - DETENIDOS
           </button>
-          <button
+          <button onclick="document.getElementById('contacto').scrollIntoView({behavior: 'smooth'})"
             class="glass-card border border-white/10 text-white px-8 py-4 font-medium backdrop-blur-md hover:bg-white/10 transition-all group flex items-center gap-3"
             style="">
             Solicitar Estrategia de Defensa
@@ -201,7 +201,7 @@
   <main class="max-w-screen-2xl mx-auto px-8 py-24 grid grid-cols-1 lg:grid-cols-12 gap-16">
     <!-- Central Feed & Specialties -->
     <div class="lg:col-span-8">
-      <section class="mb-24">
+      <section id="especialidades" class="mb-24">
         <div class="flex items-center justify-between mb-12">
           <h2 class="font-headline text-4xl text-zinc-900 italic" style="">Especialidades Críticas</h2>
           <div class="h-px bg-outline-variant flex-grow ml-8 opacity-30"></div>
@@ -544,8 +544,7 @@
   </a>
   <script>
     function handleContact(type) {
-      // Obfuscated data to prevent simple scraping
-      const data = type === 'mail' ? ['info', 'claudiadevico.com'].join('@') : ['+54', '9', '351', '000', '000'].join('');
+      const data = type === 'mail' ? 'contacto@abogadadevico.com' : '+5493512355442';
       window.location.href = (type === 'mail' ? 'mailto:' : 'tel:') + data;
     }
   </script>
