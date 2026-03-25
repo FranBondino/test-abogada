@@ -1,396 +1,494 @@
-<!DOCTYPE html><html class="light" lang="es"><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Dra. Claudia Devico - Defensa Criminal de Alta Complejidad</title>
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;0,700;1,600&amp;family=Manrope:wght@300;400;500;700&amp;family=Crimson+Pro:wght@400;600;700&amp;family=DM+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
-<!-- Icons -->
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<!-- Tailwind -->
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "inverse-surface": "#2e3132",
-              "secondary": "#466179",
-              "error-container": "#ffdad6",
-              "primary": "#785916",
-              "on-primary-container": "#5a4000",
-              "surface-tint": "#785916",
-              "secondary-fixed-dim": "#adcae5",
-              "on-secondary-container": "#4a657d",
-              "tertiary-fixed-dim": "#eac249",
-              "on-error-container": "#93000a",
-              "on-primary-fixed": "#271900",
-              "on-primary": "#ffffff",
-              "surface-container-highest": "#e1e3e4",
-              "primary-container": "#d4ac61",
-              "inverse-primary": "#eac073",
-              "surface-variant": "#e1e3e4",
-              "on-tertiary-fixed": "#241a00",
-              "surface-container-lowest": "#ffffff",
-              "on-secondary-fixed": "#001e31",
-              "tertiary-container": "#d4ae36",
-              "surface-container": "#edeeef",
-              "on-tertiary": "#ffffff",
-              "on-surface": "#191c1d",
-              "on-surface-variant": "#4e4638",
-              "tertiary": "#745b00",
-              "background": "#f8f9fa",
-              "surface-bright": "#f8f9fa",
-              "outline-variant": "#d1c5b3",
-              "outline": "#807667",
-              "surface-container-low": "#f3f4f5",
-              "secondary-fixed": "#cce5ff",
-              "surface": "#f8f9fa",
-              "primary-fixed": "#ffdea6",
-              "tertiary-fixed": "#ffe08b",
-              "on-secondary-fixed-variant": "#2e4960",
-              "on-tertiary-fixed-variant": "#584400",
-              "secondary-container": "#c6e3ff",
-              "primary-fixed-dim": "#eac073",
-              "on-background": "#191c1d",
-              "inverse-on-surface": "#f0f1f2",
-              "on-tertiary-container": "#554200",
-              "error": "#ba1a1a",
-              "on-secondary": "#ffffff",
-              "on-primary-fixed-variant": "#5d4200",
-              "surface-container-high": "#e7e8e9",
-              "surface-dim": "#d9dadb",
-              "on-error": "#ffffff"
-            },
-            fontFamily: {
-              "headline": ["Newsreader"],
-              "body": ["Manrope"],
-              "label": ["Manrope"]
-            },
-            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+<!DOCTYPE html>
+<html class="light" lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Dra. Claudia Devico - Defensa Criminal de Alta Complejidad</title>
+  <link rel="icon" type="image/png" href="../favicon-final.png">
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;0,700;1,600&amp;family=Manrope:wght@300;400;500;700&amp;family=Crimson+Pro:wght@400;600;700&amp;family=DM+Sans:wght@400;500;700&amp;display=swap"
+    rel="stylesheet">
+  <!-- Icons -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet">
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "inverse-surface": "#2e3132",
+            "secondary": "#466179",
+            "error-container": "#ffdad6",
+            "primary": "#785916",
+            "on-primary-container": "#5a4000",
+            "surface-tint": "#785916",
+            "secondary-fixed-dim": "#adcae5",
+            "on-secondary-container": "#4a657d",
+            "tertiary-fixed-dim": "#eac249",
+            "on-error-container": "#93000a",
+            "on-primary-fixed": "#271900",
+            "on-primary": "#ffffff",
+            "surface-container-highest": "#e1e3e4",
+            "primary-container": "#d4ac61",
+            "inverse-primary": "#eac073",
+            "surface-variant": "#e1e3e4",
+            "on-tertiary-fixed": "#241a00",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary-fixed": "#001e31",
+            "tertiary-container": "#d4ae36",
+            "surface-container": "#edeeef",
+            "on-tertiary": "#ffffff",
+            "on-surface": "#191c1d",
+            "on-surface-variant": "#4e4638",
+            "tertiary": "#745b00",
+            "background": "#f8f9fa",
+            "surface-bright": "#f8f9fa",
+            "outline-variant": "#d1c5b3",
+            "outline": "#807667",
+            "surface-container-low": "#f3f4f5",
+            "secondary-fixed": "#cce5ff",
+            "surface": "#f8f9fa",
+            "primary-fixed": "#ffdea6",
+            "tertiary-fixed": "#ffe08b",
+            "on-secondary-fixed-variant": "#2e4960",
+            "on-tertiary-fixed-variant": "#584400",
+            "secondary-container": "#c6e3ff",
+            "primary-fixed-dim": "#eac073",
+            "on-background": "#191c1d",
+            "inverse-on-surface": "#f0f1f2",
+            "on-tertiary-container": "#554200",
+            "error": "#ba1a1a",
+            "on-secondary": "#ffffff",
+            "on-primary-fixed-variant": "#5d4200",
+            "surface-container-high": "#e7e8e9",
+            "surface-dim": "#d9dadb",
+            "on-error": "#ffffff"
           },
+          fontFamily: {
+            "headline": ["Newsreader"],
+            "body": ["Manrope"],
+            "label": ["Manrope"]
+          },
+          borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
         },
-      }
-    </script>
-<style>
-      .material-symbols-outlined {
-        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-      }
-      .glass-card {
-        background: rgba(25, 28, 29, 0.7);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-      }
-      .gold-pulse {
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .glass-card {
+      background: rgba(25, 28, 29, 0.7);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .gold-pulse {
+      box-shadow: 0 0 0 0 rgba(120, 89, 22, 0.7);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(0.95);
         box-shadow: 0 0 0 0 rgba(120, 89, 22, 0.7);
-        animation: pulse 2s infinite;
       }
-      @keyframes pulse {
-        0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(120, 89, 22, 0.7); }
-        70% { transform: scale(1); box-shadow: 0 0 0 15px rgba(120, 89, 22, 0); }
-        100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(120, 89, 22, 0); }
+
+      70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 15px rgba(120, 89, 22, 0);
       }
-    </style>
+
+      100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(120, 89, 22, 0);
+      }
+    }
+  </style>
 </head>
+
 <body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
-<!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
-<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto relative">
-<div class="font-['Newsreader'] italic font-semibold text-2xl text-zinc-900 dark:text-zinc-100" style="">
-                Dra. Claudia Devico
+  <!-- TopNavBar -->
+  <nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-zinc-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+    <div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto relative">
+      <a href="/" class="font-['Newsreader'] italic font-semibold text-2xl text-zinc-900 dark:text-zinc-100" style="">
+        Dra. Claudia Devico
+      </a>
+      <div class="hidden md:flex gap-8 font-['Newsreader'] text-lg tracking-tight">
+        <a class="text-amber-800 dark:text-amber-400 font-medium border-b border-amber-600" href="/"
+          style="">Especialidades</a>
+        <a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
+          href="/" style="">Urgencia Detenidos</a>
+        <a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
+          href="/" style="">Casos de Éxito</a>
+        <a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
+          href="/" style="">Blog Jurídico</a>
+        <a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors"
+          href="/" style="">Contacto</a>
+      </div>
+      <button class="bg-primary text-on-primary px-6 py-2 font-medium hover:opacity-90 active:scale-95 transition-all"
+        style="">
+        Urgencia 24hs
+      </button>
+      <div
+        class="bg-gradient-to-r from-transparent via-amber-200/20 to-transparent h-[1px] bottom-0 absolute left-0 right-0">
+      </div>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <header class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-zinc-950">
+    <div class="absolute inset-0 opacity-40">
+      <img alt="Palacio de Justicia de Córdoba" class="w-full h-full object-cover grayscale brightness-50"
+        data-alt="Tribunales I Córdoba Palacio de Justicia exterior moody"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm3Bu4CoExkMXI_0Dm0ws1SSJuXGoyVBvs_oioF7hj1vqvcS1XkDg-2N9wgXtbiVTA8IFCUmPrbVm2-FZdEttrhL5vntkx3YSwikdECjBU822MPeH_oJW1FHAgtGsyWkwPABQDZRUjYoMKwcqIWvIm5Nk_HOVGddCt7vSmZVJMllv9YkXuEJELFBhrr0t2TpMVR39WBI7xwG7cRZkTyRt3eE-Z8KVBQGZyR051lfgJ8evL_6f7qtaCr0wO41i8LriSxrjUCIsykWI"
+        style="">
+    </div>
+    <div class="absolute inset-0 bg-gradient-to-b from-zinc-950/20 via-zinc-950/80 to-zinc-950"></div>
+    <div class="relative z-10 max-w-screen-2xl mx-auto px-8 w-full grid grid-cols-1 lg:grid-cols-12 gap-12">
+      <div class="lg:col-span-8 flex flex-col justify-center">
+        <span class="text-primary font-bold tracking-[0.3em] uppercase mb-4 text-sm" style="">Alta Complejidad
+          Penal</span>
+        <h1 class="font-headline text-5xl md:text-7xl lg:text-8xl text-white leading-tight mb-8" style="">
+          <div><span style="font-size: 6rem; font-weight: inherit;"><br></span></div>
+          <div><span style="font-size: 6rem; font-weight: inherit;">Claudia Devico</span></div>
+          <font color="#ffdea6"><i>Abogada Penalista</i></font>
+        </h1>
+        <p class="text-zinc-400 text-xl max-w-2xl mb-12 font-light leading-relaxed" style="">
+          Estrategia jurídica de élite para causas críticas. Representación técnica especializada en el Fuero Penal de
+          Córdoba y Tribunales Federales.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-6 items-start">
+          <button class="gold-pulse bg-primary text-on-primary px-8 py-4 font-bold flex items-center gap-3" style="">
+            <span class="material-symbols-outlined"
+              style="font-variation-settings: &quot;FILL&quot; 1;">emergency</span>
+            URGENCIA 24hs - DETENIDOS
+          </button>
+          <button
+            class="glass-card border border-white/10 text-white px-8 py-4 font-medium backdrop-blur-md hover:bg-white/10 transition-all group flex items-center gap-3"
+            style="">
+            Solicitar Estrategia de Defensa
+            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform"
+              style="">arrow_forward</span>
+          </button>
+        </div>
+      </div>
+      <div class="lg:col-span-4 hidden lg:flex items-center justify-end">
+        <div class="p-8 border-l border-primary/30 space-y-8">
+          <div>
+            <div class="text-primary font-bold text-3xl mb-1" style="">20+</div>
+            <div class="text-zinc-500 text-xs uppercase tracking-widest" style="">Años de Trayectoria</div>
+          </div>
+          <div>
+            <div class="text-primary font-bold text-3xl mb-1" style="">94%</div>
+            <div class="text-zinc-500 text-xs uppercase tracking-widest" style="">Efectividad en Juicio</div>
+          </div>
+          <div>
+            <div class="text-primary font-bold text-3xl mb-1" style="">Confidencial</div>
+            <div class="text-zinc-500 text-xs uppercase tracking-widest" style="">Protocolo de Privacidad</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="max-w-screen-2xl mx-auto px-8 py-24 grid grid-cols-1 lg:grid-cols-12 gap-16">
+    <!-- Central Feed & Specialties -->
+    <div class="lg:col-span-8">
+      <section class="mb-24">
+        <div class="flex items-center justify-between mb-12">
+          <h2 class="font-headline text-4xl text-zinc-900 italic" style="">Especialidades Críticas</h2>
+          <div class="h-px bg-outline-variant flex-grow ml-8 opacity-30"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Card 1 -->
+          <div
+            class="bg-surface-container-low p-8 relative overflow-hidden group hover:bg-surface-container transition-colors duration-500">
+            <div
+              class="absolute top-4 right-4 bg-primary/10 text-primary text-[10px] font-bold px-2 py-1 uppercase tracking-tighter border border-primary/20"
+              style="">
+              Consulta Confidencial
             </div>
-<div class="hidden md:flex gap-8 font-['Newsreader'] text-lg tracking-tight">
-<a class="text-amber-800 dark:text-amber-400 font-medium border-b border-amber-600" href="#" style="">Especialidades</a>
-<a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors" href="#" style="">Urgencia Detenidos</a>
-<a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors" href="#" style="">Casos de Éxito</a>
-<a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors" href="#" style="">Blog Jurídico</a>
-<a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors" href="#" style="">Contacto</a>
-</div>
-<button class="bg-primary text-on-primary px-6 py-2 font-medium hover:opacity-90 active:scale-95 transition-all" style="">
-                Urgencia 24hs
-            </button>
-<div class="bg-gradient-to-r from-transparent via-amber-200/20 to-transparent h-[1px] bottom-0 absolute left-0 right-0"></div>
-</div>
-</nav>
-<!-- Hero Section -->
-<header class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-zinc-950">
-<div class="absolute inset-0 opacity-40">
-<img alt="Palacio de Justicia de Córdoba" class="w-full h-full object-cover grayscale brightness-50" data-alt="Tribunales I Córdoba Palacio de Justicia exterior moody" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm3Bu4CoExkMXI_0Dm0ws1SSJuXGoyVBvs_oioF7hj1vqvcS1XkDg-2N9wgXtbiVTA8IFCUmPrbVm2-FZdEttrhL5vntkx3YSwikdECjBU822MPeH_oJW1FHAgtGsyWkwPABQDZRUjYoMKwcqIWvIm5Nk_HOVGddCt7vSmZVJMllv9YkXuEJELFBhrr0t2TpMVR39WBI7xwG7cRZkTyRt3eE-Z8KVBQGZyR051lfgJ8evL_6f7qtaCr0wO41i8LriSxrjUCIsykWI" style="">
-</div>
-<div class="absolute inset-0 bg-gradient-to-b from-zinc-950/20 via-zinc-950/80 to-zinc-950"></div>
-<div class="relative z-10 max-w-screen-2xl mx-auto px-8 w-full grid grid-cols-1 lg:grid-cols-12 gap-12">
-<div class="lg:col-span-8 flex flex-col justify-center">
-<span class="text-primary font-bold tracking-[0.3em] uppercase mb-4 text-sm" style="">Alta Complejidad Penal</span>
-<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl text-white leading-tight mb-8" style=""><div><span style="font-size: 6rem; font-weight: inherit;"><br></span></div><div><span style="font-size: 6rem; font-weight: inherit;">Claudia Devico</span></div><font color="#ffdea6"><i>Abogada Penalista</i></font></h1>
-<p class="text-zinc-400 text-xl max-w-2xl mb-12 font-light leading-relaxed" style="">
-                    Estrategia jurídica de élite para causas críticas. Representación técnica especializada en el Fuero Penal de Córdoba y Tribunales Federales.
-                </p>
-<div class="flex flex-col sm:flex-row gap-6 items-start">
-<button class="gold-pulse bg-primary text-on-primary px-8 py-4 font-bold flex items-center gap-3" style="">
-<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">emergency</span>
-                        URGENCIA 24hs - DETENIDOS
-                    </button>
-<button class="glass-card border border-white/10 text-white px-8 py-4 font-medium backdrop-blur-md hover:bg-white/10 transition-all group flex items-center gap-3" style="">
-                        Solicitar Estrategia de Defensa
-                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" style="">arrow_forward</span>
-</button>
-</div>
-</div>
-<div class="lg:col-span-4 hidden lg:flex items-center justify-end">
-<div class="p-8 border-l border-primary/30 space-y-8">
-<div>
-<div class="text-primary font-bold text-3xl mb-1" style="">20+</div>
-<div class="text-zinc-500 text-xs uppercase tracking-widest" style="">Años de Trayectoria</div>
-</div>
-<div>
-<div class="text-primary font-bold text-3xl mb-1" style="">94%</div>
-<div class="text-zinc-500 text-xs uppercase tracking-widest" style="">Efectividad en Juicio</div>
-</div>
-<div>
-<div class="text-primary font-bold text-3xl mb-1" style="">Confidencial</div>
-<div class="text-zinc-500 text-xs uppercase tracking-widest" style="">Protocolo de Privacidad</div>
-</div>
-</div>
-</div>
-</div>
-</header>
-<main class="max-w-screen-2xl mx-auto px-8 py-24 grid grid-cols-1 lg:grid-cols-12 gap-16">
-<!-- Central Feed & Specialties -->
-<div class="lg:col-span-8">
-<section class="mb-24">
-<div class="flex items-center justify-between mb-12">
-<h2 class="font-headline text-4xl text-zinc-900 italic" style="">Especialidades Críticas</h2>
-<div class="h-px bg-outline-variant flex-grow ml-8 opacity-30"></div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<!-- Card 1 -->
-<div class="bg-surface-container-low p-8 relative overflow-hidden group hover:bg-surface-container transition-colors duration-500">
-<div class="absolute top-4 right-4 bg-primary/10 text-primary text-[10px] font-bold px-2 py-1 uppercase tracking-tighter border border-primary/20" style="">
-                            Consulta Confidencial
-                        </div>
-<span class="material-symbols-outlined text-primary mb-6 text-4xl" data-icon="gavel" style="">gavel</span>
-<h3 class="font-headline text-2xl mb-4" style="">Falsas Denuncias</h3>
-<div class="space-y-3 text-sm text-on-surface-variant font-medium">
-<div class="flex justify-between border-b border-outline-variant/30 pb-2">
-<span class="opacity-60" style="">Nivel de Complejidad</span>
-<span class="text-primary" style="">Alta</span>
-</div>
-<div class="flex justify-between border-b border-outline-variant/30 pb-2">
-<span class="opacity-60" style="">Fuero</span>
-<span class="" style="">Provincial/Federal</span>
-</div>
-<div class="flex justify-between">
-<span class="opacity-60" style="">Etapa</span>
-<span class="" style="">Instrucción/Juicio</span>
-</div>
-</div>
-</div>
-<!-- Card 2 -->
-<div class="bg-surface-container-low p-8 relative overflow-hidden group hover:bg-surface-container transition-colors duration-500">
-<div class="absolute top-4 right-4 bg-primary/10 text-primary text-[10px] font-bold px-2 py-1 uppercase tracking-tighter border border-primary/20" style="">
-                            Consulta Confidencial
-                        </div>
-<span class="material-symbols-outlined text-primary mb-6 text-4xl" data-icon="shield" style="">shield</span>
-<h3 class="font-headline text-2xl mb-4" style="">Abusos</h3>
-<div class="space-y-3 text-sm text-on-surface-variant font-medium">
-<div class="flex justify-between border-b border-outline-variant/30 pb-2">
-<span class="opacity-60" style="">Nivel de Complejidad</span>
-<span class="text-primary" style="">Alta</span>
-</div>
-<div class="flex justify-between border-b border-outline-variant/30 pb-2">
-<span class="opacity-60" style="">Fuero</span>
-<span class="" style="">Provincial/Federal</span>
-</div>
-<div class="flex justify-between">
-<span class="opacity-60" style="">Etapa</span>
-<span class="" style="">Instrucción/Juicio</span>
-</div>
-</div>
-</div>
-<!-- Card 3 -->
-<div class="bg-surface-container-low p-8 relative overflow-hidden group hover:bg-surface-container transition-colors duration-500">
-<div class="absolute top-4 right-4 bg-primary/10 text-primary text-[10px] font-bold px-2 py-1 uppercase tracking-tighter border border-primary/20" style="">
-                            Consulta Confidencial
-                        </div>
-<span class="material-symbols-outlined text-primary mb-6 text-4xl" data-icon="balance" style="">balance</span>
-<h3 class="font-headline text-2xl mb-4" style="">Homicidios</h3>
-<div class="space-y-3 text-sm text-on-surface-variant font-medium">
-<div class="flex justify-between border-b border-outline-variant/30 pb-2">
-<span class="opacity-60" style="">Nivel de Complejidad</span>
-<span class="text-primary" style="">Alta</span>
-</div>
-<div class="flex justify-between border-b border-outline-variant/30 pb-2">
-<span class="opacity-60" style="">Fuero</span>
-<span class="" style="">Provincial/Federal</span>
-</div>
-<div class="flex justify-between">
-<span class="opacity-60" style="">Etapa</span>
-<span class="" style="">Instrucción/Juicio</span>
-</div>
-</div>
-</div>
-<!-- Card 4 -->
-<div class="bg-surface-container-low p-8 relative overflow-hidden group hover:bg-surface-container transition-colors duration-500">
-<div class="absolute top-4 right-4 bg-primary/10 text-primary text-[10px] font-bold px-2 py-1 uppercase tracking-tighter border border-primary/20" style="">
-                            Consulta Confidencial
-                        </div>
-<span class="material-symbols-outlined text-primary mb-6 text-4xl" data-icon="policy" style="">policy</span>
-<h3 class="font-headline text-2xl mb-4" style="">Baja Imputabilidad</h3>
-<div class="space-y-3 text-sm text-on-surface-variant font-medium">
-<div class="flex justify-between border-b border-outline-variant/30 pb-2">
-<span class="opacity-60" style="">Nivel de Complejidad</span>
-<span class="text-primary" style="">Alta</span>
-</div>
-<div class="flex justify-between border-b border-outline-variant/30 pb-2">
-<span class="opacity-60" style="">Fuero</span>
-<span class="" style="">Provincial/Federal</span>
-</div>
-<div class="flex justify-between">
-<span class="opacity-60" style="">Etapa</span>
-<span class="" style="">Instrucción/Juicio</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Central Feed Section -->
-<section>
-<h2 class="font-headline text-4xl text-zinc-900 mb-12" style="">Análisis &amp; Doctrina Penal</h2>
-<div class="space-y-12">
-<article class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center border-b border-outline-variant/20 pb-12">
-<div class="md:col-span-4 aspect-[4/3] bg-zinc-200 overflow-hidden">
-<img alt="Martillo judicial y folios" class="w-full h-full object-cover grayscale hover:scale-105 transition-transform duration-700" data-alt="Legal folio and wooden gavel on desk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmKWP7RS9f7TYKwR6MMPhOh37U8jTacyMbw5SfGO8TFsa9G1uxKEBI2sQsIgt5WvIdGStXIeJVjUyYL-ygTf97NOZl6dCTOo75vT-ByIFWb9oPVMlewLZcviOe5UK30vWtb68hYNBYKaBEydyHHwDQUo-aWlBwi3yOPktiWnCRiWp6o9itWIwuTl7IezoMQy9glKmjZS5DL8tkQQZf8W-6WlhVHg26_r3JR23u8CvXGXHUEc0vnjQw7VIG7JcIA_dPeZydH5XdVBY" style="">
-</div>
-<div class="md:col-span-8">
-<div class="text-primary font-bold text-xs uppercase tracking-widest mb-2" style="">Prueba Informática</div>
-<h3 class="font-headline text-3xl mb-4 hover:text-primary transition-colors cursor-pointer" style="">El valor de la evidencia digital en delitos de alta complejidad</h3>
-<p class="text-on-surface-variant line-clamp-2 mb-6" style="">Un análisis exhaustivo sobre los protocolos de custodia y la impugnación de evidencia digital en el proceso penal cordobés moderno...</p>
-<div class="flex items-center gap-4 text-xs font-bold text-zinc-400">
-<span class="" style="">15 MIN DE LECTURA</span>
-<span class="w-1 h-1 bg-zinc-300 rounded-full"></span>
-<span class="" style="">MARZO 2024</span>
-</div>
-</div>
-</article>
-<article class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center border-b border-outline-variant/20 pb-12">
-<div class="md:col-span-4 aspect-[4/3] bg-zinc-200 overflow-hidden">
-<img alt="Documentos legales" class="w-full h-full object-cover grayscale hover:scale-105 transition-transform duration-700" data-alt="Close up of legal signatures and papers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNGe03zL1iPrHu5LAg76K7l0zKVNN0dOAekqJlFqCepuTQfTgYNTETu-rMb3kNA8HSICt9EX9GUSwI-7wtyS-cF3dAU-dtYN2TPsZWmeXH91GywlzdkmFg-uIMk5A8DV64ne8Qyd0tUoqPC9YBex7DPU7Uigmq1FX1AgiFyfBBPHEphZkGG99mgz9DWn4nkou69WCtjH4I2pVbC5pnDHoJbFFIOLvOE3DUitq-tpSh0UOZ0kAW1hQhBzI-V0ceHCrJFCOVCWEG024" style="">
-</div>
-<div class="md:col-span-8">
-<div class="text-primary font-bold text-xs uppercase tracking-widest mb-2" style="">Garantismo Penitenciario</div>
-<h3 class="font-headline text-3xl mb-4 hover:text-primary transition-colors cursor-pointer" style="">Prisión Preventiva: Límites constitucionales y abusos procesales</h3>
-<p class="text-on-surface-variant line-clamp-2 mb-6" style="">La excepcionalidad de la medida coercitiva y las estrategias de defensa para garantizar la libertad ambulatoria durante el proceso.</p>
-<div class="flex items-center gap-4 text-xs font-bold text-zinc-400">
-<span class="" style="">12 MIN DE LECTURA</span>
-<span class="w-1 h-1 bg-zinc-300 rounded-full"></span>
-<span class="" style="">FEBRERO 2024</span>
-</div>
-</div>
-</article>
-</div>
-</section>
-</div>
-<!-- Authority Sidebar -->
-<aside class="lg:col-span-4">
-<div class="sticky top-28 space-y-8">
-<div class="bg-zinc-50 dark:bg-zinc-900/50 rounded-r-2xl border-r border-zinc-200 dark:border-zinc-800 p-8">
-<div class="flex items-center gap-3 mb-8">
-<span class="material-symbols-outlined text-primary text-3xl" style="">account_balance</span>
-<div>
-<h4 class="font-headline text-xl text-zinc-800 dark:text-zinc-200" style="">Actualidad Penal Córdoba</h4>
-<p class="font-['Manrope'] text-[10px] uppercase tracking-widest text-zinc-500" style="">Circunscripción Córdoba</p>
-</div>
-</div>
-<div class="space-y-6 mb-10">
-<div class="group cursor-pointer">
-<div class="flex items-center gap-3 text-primary mb-1">
-<span class="material-symbols-outlined text-sm" style="">gavel</span>
-<span class="text-xs font-bold uppercase tracking-wider" style="">Jurisprudencia Reciente TSJ</span>
-</div>
-<p class="text-sm font-medium hover:translate-x-1 transition-transform" style="">Fallo histórico sobre legítima defensa en contextos de vulnerabilidad.</p>
-</div>
-<div class="group cursor-pointer">
-<div class="flex items-center gap-3 text-primary mb-1">
-<span class="material-symbols-outlined text-sm" style="">notifications_active</span>
-<span class="text-xs font-bold uppercase tracking-wider" style="">Alertas Legales</span>
-</div>
-<p class="text-sm font-medium hover:translate-x-1 transition-transform" style="">Nuevas directrices de la Fiscalía General sobre delitos informáticos.</p>
-</div>
-<div class="group cursor-pointer">
-<div class="flex items-center gap-3 text-primary mb-1">
-<span class="material-symbols-outlined text-sm" style="">menu_book</span>
-<span class="text-xs font-bold uppercase tracking-wider" style="">Doctrina Penal</span>
-</div>
-<p class="text-sm font-medium hover:translate-x-1 transition-transform" style="">Modificaciones en la escala penal para delitos de defraudación.</p>
-</div>
-<div class="group cursor-pointer">
-<div class="flex items-center gap-3 text-primary mb-1">
-<span class="material-symbols-outlined text-sm" style="">calendar_month</span>
-<span class="text-xs font-bold uppercase tracking-wider" style="">Agenda Tribunales</span>
-</div>
-<p class="text-sm font-medium hover:translate-x-1 transition-transform" style="">Calendario de Ferias y turnos de Flagrancia 2024.</p>
-</div>
-</div>
-<button class="w-full border border-primary/30 py-3 text-primary text-xs font-bold uppercase tracking-widest hover:bg-primary hover:text-white transition-all" style="">
-                        Ver Todas las Alertas
-                    </button>
-</div>
-<div class="bg-primary-container/10 p-8">
-<h5 class="font-headline text-lg mb-4 italic" style="">Asistencia Legal Inmediata</h5>
-<p class="text-sm mb-6 opacity-80" style="">Si usted o un familiar ha sido detenido, el tiempo es el factor más crítico. Contacte a nuestra unidad de respuesta rápida.</p>
-<a class="flex items-center justify-center gap-3 bg-zinc-950 text-white py-4 font-bold text-lg hover:bg-zinc-900 transition-colors" href="tel:+549351000000" style="">
-<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">call</span>
-                        Llamar Ahora
-                    </a>
-</div>
-</div>
-</aside>
-</main>
-<!-- Secure Connection Simulated Modal (Overlay) -->
-<div class="fixed inset-0 z-[100] flex items-center justify-center pointer-events-none opacity-0 transition-opacity duration-300" id="secureModal">
-<div class="absolute inset-0 bg-zinc-950/90 backdrop-blur-xl"></div>
-<div class="relative z-10 glass-card p-12 max-w-md w-full text-center border border-white/10">
-<span class="material-symbols-outlined text-primary text-6xl mb-6" style="">security</span>
-<h3 class="text-white font-headline text-2xl mb-4" style="">Estableciendo conexión cifrada segura...</h3>
-<div class="w-full bg-white/10 h-1 mb-8 overflow-hidden">
-<div class="bg-primary h-full w-1/2 animate-[progress_2s_ease-in-out_infinite]"></div>
-</div>
-<p class="text-zinc-400 text-sm" style="">Protegiendo su secreto profesional mediante protocolos de grado judicial.</p>
-</div>
-</div>
-<style>
-        @keyframes progress {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(200%); }
-        }
-    </style>
-<!-- Footer -->
-<footer class="bg-zinc-950 w-full py-16 px-8 flex flex-col items-center gap-8 border-t border-zinc-800">
-<div class="font-['Newsreader'] text-2xl text-zinc-100 italic" style="">Dra. Claudia Devico</div>
-<div class="flex flex-wrap justify-center gap-8 font-['Manrope'] text-xs uppercase tracking-widest text-zinc-500">
-<a class="hover:text-amber-500 transition-colors underline-offset-4 hover:underline" href="#" style="">Privacidad de Datos</a>
-<a class="hover:text-amber-500 transition-colors underline-offset-4 hover:underline" href="#" style="">Aviso Legal</a>
-<a class="hover:text-amber-500 transition-colors underline-offset-4 hover:underline" href="#" style="">Protocolo de Confidencialidad</a>
-<a class="hover:text-amber-500 transition-colors underline-offset-4 hover:underline" href="#" style="">Soporte Técnico</a>
-</div>
-<div class="text-center space-y-2 max-w-xl">
-<div class="text-zinc-100 flex items-center justify-center gap-2 mb-4" style="">
-<span class="material-symbols-outlined text-primary" style="">location_on</span>
-                Caseros 551, Tribunales I, CP 5000 Córdoba, Argentina
+            <span class="material-symbols-outlined text-primary mb-6 text-4xl" data-icon="gavel" style="">gavel</span>
+            <h3 class="font-headline text-2xl mb-4" style="">Falsas Denuncias</h3>
+            <div class="space-y-3 text-sm text-on-surface-variant font-medium">
+              <div class="flex justify-between border-b border-outline-variant/30 pb-2">
+                <span class="opacity-60" style="">Nivel de Complejidad</span>
+                <span class="text-primary" style="">Alta</span>
+              </div>
+              <div class="flex justify-between border-b border-outline-variant/30 pb-2">
+                <span class="opacity-60" style="">Fuero</span>
+                <span class="" style="">Provincial/Federal</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="opacity-60" style="">Etapa</span>
+                <span class="" style="">Instrucción/Juicio</span>
+              </div>
             </div>
-<p class="font-['Manrope'] text-[10px] uppercase tracking-[0.2em] text-zinc-600 leading-relaxed" style="">
-                © 2024 Claudia Devico - Defensa Criminal de Alta Complejidad. <br>
-                Matrícula Profesional CPAC. Tribunales I, Córdoba.
-            </p>
-</div>
-<div class="flex gap-6 mt-4">
-<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-zinc-400 hover:text-primary hover:bg-white/10 transition-all" href="#" style="">
-<span class="material-symbols-outlined" style="">share</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-zinc-400 hover:text-primary hover:bg-white/10 transition-all" href="#" style="">
-<span class="material-symbols-outlined" style="">mail</span>
-</a>
-</div>
-</footer>
-</body></html>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="bg-surface-container-low p-8 relative overflow-hidden group hover:bg-surface-container transition-colors duration-500">
+            <div
+              class="absolute top-4 right-4 bg-primary/10 text-primary text-[10px] font-bold px-2 py-1 uppercase tracking-tighter border border-primary/20"
+              style="">
+              Consulta Confidencial
+            </div>
+            <span class="material-symbols-outlined text-primary mb-6 text-4xl" data-icon="shield" style="">shield</span>
+            <h3 class="font-headline text-2xl mb-4" style="">Abusos</h3>
+            <div class="space-y-3 text-sm text-on-surface-variant font-medium">
+              <div class="flex justify-between border-b border-outline-variant/30 pb-2">
+                <span class="opacity-60" style="">Nivel de Complejidad</span>
+                <span class="text-primary" style="">Alta</span>
+              </div>
+              <div class="flex justify-between border-b border-outline-variant/30 pb-2">
+                <span class="opacity-60" style="">Fuero</span>
+                <span class="" style="">Provincial/Federal</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="opacity-60" style="">Etapa</span>
+                <span class="" style="">Instrucción/Juicio</span>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="bg-surface-container-low p-8 relative overflow-hidden group hover:bg-surface-container transition-colors duration-500">
+            <div
+              class="absolute top-4 right-4 bg-primary/10 text-primary text-[10px] font-bold px-2 py-1 uppercase tracking-tighter border border-primary/20"
+              style="">
+              Consulta Confidencial
+            </div>
+            <span class="material-symbols-outlined text-primary mb-6 text-4xl" data-icon="balance"
+              style="">balance</span>
+            <h3 class="font-headline text-2xl mb-4" style="">Homicidios</h3>
+            <div class="space-y-3 text-sm text-on-surface-variant font-medium">
+              <div class="flex justify-between border-b border-outline-variant/30 pb-2">
+                <span class="opacity-60" style="">Nivel de Complejidad</span>
+                <span class="text-primary" style="">Alta</span>
+              </div>
+              <div class="flex justify-between border-b border-outline-variant/30 pb-2">
+                <span class="opacity-60" style="">Fuero</span>
+                <span class="" style="">Provincial/Federal</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="opacity-60" style="">Etapa</span>
+                <span class="" style="">Instrucción/Juicio</span>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div
+            class="bg-surface-container-low p-8 relative overflow-hidden group hover:bg-surface-container transition-colors duration-500">
+            <div
+              class="absolute top-4 right-4 bg-primary/10 text-primary text-[10px] font-bold px-2 py-1 uppercase tracking-tighter border border-primary/20"
+              style="">
+              Consulta Confidencial
+            </div>
+            <span class="material-symbols-outlined text-primary mb-6 text-4xl" data-icon="policy" style="">policy</span>
+            <h3 class="font-headline text-2xl mb-4" style="">Baja Imputabilidad</h3>
+            <div class="space-y-3 text-sm text-on-surface-variant font-medium">
+              <div class="flex justify-between border-b border-outline-variant/30 pb-2">
+                <span class="opacity-60" style="">Nivel de Complejidad</span>
+                <span class="text-primary" style="">Alta</span>
+              </div>
+              <div class="flex justify-between border-b border-outline-variant/30 pb-2">
+                <span class="opacity-60" style="">Fuero</span>
+                <span class="" style="">Provincial/Federal</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="opacity-60" style="">Etapa</span>
+                <span class="" style="">Instrucción/Juicio</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Central Feed Section -->
+      <section>
+        <h2 class="font-headline text-4xl text-zinc-900 mb-12" style="">Análisis &amp; Doctrina Penal</h2>
+        <div class="space-y-12">
+          <article class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center border-b border-outline-variant/20 pb-12">
+            <div class="md:col-span-4 aspect-[4/3] bg-zinc-200 overflow-hidden">
+              <img alt="Martillo judicial y folios"
+                class="w-full h-full object-cover grayscale hover:scale-105 transition-transform duration-700"
+                data-alt="Legal folio and wooden gavel on desk"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmKWP7RS9f7TYKwR6MMPhOh37U8jTacyMbw5SfGO8TFsa9G1uxKEBI2sQsIgt5WvIdGStXIeJVjUyYL-ygTf97NOZl6dCTOo75vT-ByIFWb9oPVMlewLZcviOe5UK30vWtb68hYNBYKaBEydyHHwDQUo-aWlBwi3yOPktiWnCRiWp6o9itWIwuTl7IezoMQy9glKmjZS5DL8tkQQZf8W-6WlhVHg26_r3JR23u8CvXGXHUEc0vnjQw7VIG7JcIA_dPeZydH5XdVBY"
+                style="">
+            </div>
+            <div class="md:col-span-8">
+              <div class="text-primary font-bold text-xs uppercase tracking-widest mb-2" style="">Prueba Informática
+              </div>
+              <h3 class="font-headline text-3xl mb-4 hover:text-primary transition-colors cursor-pointer" style="">El
+                valor de la evidencia digital en delitos de alta complejidad</h3>
+              <p class="text-on-surface-variant line-clamp-2 mb-6" style="">Un análisis exhaustivo sobre los protocolos
+                de custodia y la impugnación de evidencia digital en el proceso penal cordobés moderno...</p>
+              <div class="flex items-center gap-4 text-xs font-bold text-zinc-400">
+                <span class="" style="">15 MIN DE LECTURA</span>
+                <span class="w-1 h-1 bg-zinc-300 rounded-full"></span>
+                <span class="" style="">MARZO 2024</span>
+              </div>
+            </div>
+          </article>
+          <article class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center border-b border-outline-variant/20 pb-12">
+            <div class="md:col-span-4 aspect-[4/3] bg-zinc-200 overflow-hidden">
+              <img alt="Documentos legales"
+                class="w-full h-full object-cover grayscale hover:scale-105 transition-transform duration-700"
+                data-alt="Close up of legal signatures and papers"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNGe03zL1iPrHu5LAg76K7l0zKVNN0dOAekqJlFqCepuTQfTgYNTETu-rMb3kNA8HSICt9EX9GUSwI-7wtyS-cF3dAU-dtYN2TPsZWmeXH91GywlzdkmFg-uIMk5A8DV64ne8Qyd0tUoqPC9YBex7DPU7Uigmq1FX1AgiFyfBBPHEphZkGG99mgz9DWn4nkou69WCtjH4I2pVbC5pnDHoJbFFIOLvOE3DUitq-tpSh0UOZ0kAW1hQhBzI-V0ceHCrJFCOVCWEG024"
+                style="">
+            </div>
+            <div class="md:col-span-8">
+              <div class="text-primary font-bold text-xs uppercase tracking-widest mb-2" style="">Garantismo
+                Penitenciario</div>
+              <h3 class="font-headline text-3xl mb-4 hover:text-primary transition-colors cursor-pointer" style="">
+                Prisión Preventiva: Límites constitucionales y abusos procesales</h3>
+              <p class="text-on-surface-variant line-clamp-2 mb-6" style="">La excepcionalidad de la medida coercitiva y
+                las estrategias de defensa para garantizar la libertad ambulatoria durante el proceso.</p>
+              <div class="flex items-center gap-4 text-xs font-bold text-zinc-400">
+                <span class="" style="">12 MIN DE LECTURA</span>
+                <span class="w-1 h-1 bg-zinc-300 rounded-full"></span>
+                <span class="" style="">FEBRERO 2024</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+    <!-- Authority Sidebar -->
+    <aside class="lg:col-span-4">
+      <div class="sticky top-28 space-y-8">
+        <div class="bg-zinc-50 dark:bg-zinc-900/50 rounded-r-2xl border-r border-zinc-200 dark:border-zinc-800 p-8">
+          <div class="flex items-center gap-3 mb-8">
+            <span class="material-symbols-outlined text-primary text-3xl" style="">account_balance</span>
+            <div>
+              <h4 class="font-headline text-xl text-zinc-800 dark:text-zinc-200" style="">Actualidad Penal Córdoba</h4>
+              <p class="font-['Manrope'] text-[10px] uppercase tracking-widest text-zinc-500" style="">Circunscripción
+                Córdoba</p>
+            </div>
+          </div>
+          <div class="space-y-6 mb-10">
+            <div class="group cursor-pointer">
+              <div class="flex items-center gap-3 text-primary mb-1">
+                <span class="material-symbols-outlined text-sm" style="">gavel</span>
+                <span class="text-xs font-bold uppercase tracking-wider" style="">Jurisprudencia Reciente TSJ</span>
+              </div>
+              <p class="text-sm font-medium hover:translate-x-1 transition-transform" style="">Fallo histórico sobre
+                legítima defensa en contextos de vulnerabilidad.</p>
+            </div>
+            <div class="group cursor-pointer">
+              <div class="flex items-center gap-3 text-primary mb-1">
+                <span class="material-symbols-outlined text-sm" style="">notifications_active</span>
+                <span class="text-xs font-bold uppercase tracking-wider" style="">Alertas Legales</span>
+              </div>
+              <p class="text-sm font-medium hover:translate-x-1 transition-transform" style="">Nuevas directrices de la
+                Fiscalía General sobre delitos informáticos.</p>
+            </div>
+            <div class="group cursor-pointer">
+              <div class="flex items-center gap-3 text-primary mb-1">
+                <span class="material-symbols-outlined text-sm" style="">menu_book</span>
+                <span class="text-xs font-bold uppercase tracking-wider" style="">Doctrina Penal</span>
+              </div>
+              <p class="text-sm font-medium hover:translate-x-1 transition-transform" style="">Modificaciones en la
+                escala penal para delitos de defraudación.</p>
+            </div>
+            <div class="group cursor-pointer">
+              <div class="flex items-center gap-3 text-primary mb-1">
+                <span class="material-symbols-outlined text-sm" style="">calendar_month</span>
+                <span class="text-xs font-bold uppercase tracking-wider" style="">Agenda Tribunales</span>
+              </div>
+              <p class="text-sm font-medium hover:translate-x-1 transition-transform" style="">Calendario de Ferias y
+                turnos de Flagrancia 2024.</p>
+            </div>
+          </div>
+          <button
+            class="w-full border border-primary/30 py-3 text-primary text-xs font-bold uppercase tracking-widest hover:bg-primary hover:text-white transition-all"
+            style="">
+            Ver Todas las Alertas
+          </button>
+        </div>
+        <div class="bg-primary-container/10 p-8">
+          <h5 class="font-headline text-lg mb-4 italic" style="">Asistencia Legal Inmediata</h5>
+          <p class="text-sm mb-6 opacity-80" style="">Si usted o un familiar ha sido detenido, el tiempo es el factor
+            más crítico. Contacte a nuestra unidad de respuesta rápida.</p>
+          <a class="flex items-center justify-center gap-3 bg-zinc-950 text-white py-4 font-bold text-lg hover:bg-zinc-900 transition-colors"
+            href="tel:+549351000000" style="">
+            <span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">call</span>
+            Llamar Ahora
+          </a>
+        </div>
+      </div>
+    </aside>
+  </main>
+  <!-- Secure Connection Simulated Modal (Overlay) -->
+  <div
+    class="fixed inset-0 z-[100] flex items-center justify-center pointer-events-none opacity-0 transition-opacity duration-300"
+    id="secureModal">
+    <div class="absolute inset-0 bg-zinc-950/90 backdrop-blur-xl"></div>
+    <div class="relative z-10 glass-card p-12 max-w-md w-full text-center border border-white/10">
+      <span class="material-symbols-outlined text-primary text-6xl mb-6" style="">security</span>
+      <h3 class="text-white font-headline text-2xl mb-4" style="">Estableciendo conexión cifrada segura...</h3>
+      <div class="w-full bg-white/10 h-1 mb-8 overflow-hidden">
+        <div class="bg-primary h-full w-1/2 animate-[progress_2s_ease-in-out_infinite]"></div>
+      </div>
+      <p class="text-zinc-400 text-sm" style="">Protegiendo su secreto profesional mediante protocolos de grado
+        judicial.</p>
+    </div>
+  </div>
+  <style>
+    @keyframes progress {
+      0% {
+        transform: translateX(-100%);
+      }
+
+      100% {
+        transform: translateX(200%);
+      }
+    }
+  </style>
+  <!-- Footer -->
+  <footer class="bg-zinc-950 w-full py-16 px-8 flex flex-col items-center gap-8 border-t border-zinc-800">
+    <div class="font-['Newsreader'] text-2xl text-zinc-100 italic" style="">Dra. Claudia Devico</div>
+    <div class="flex flex-wrap justify-center gap-8 font-['Manrope'] text-xs uppercase tracking-widest text-zinc-500">
+      <a class="hover:text-amber-500 transition-colors underline-offset-4 hover:underline" href="/" style="">Privacidad
+        de Datos</a>
+      <a class="hover:text-amber-500 transition-colors underline-offset-4 hover:underline" href="/" style="">Aviso
+        Legal</a>
+      <a class="hover:text-amber-500 transition-colors underline-offset-4 hover:underline" href="/" style="">Protocolo
+        de Confidencialidad</a>
+      <a class="hover:text-amber-500 transition-colors underline-offset-4 hover:underline" href="/" style="">Soporte
+        Técnico</a>
+    </div>
+    <div class="text-center space-y-2 max-w-xl">
+      <div class="text-zinc-100 flex items-center justify-center gap-2 mb-4" style="">
+        <span class="material-symbols-outlined text-primary" style="">location_on</span>
+        Caseros 551, Tribunales I, CP 5000 Córdoba, Argentina
+      </div>
+      <p class="font-['Manrope'] text-[10px] uppercase tracking-[0.2em] text-zinc-600 leading-relaxed" style="">
+        © 2024 Claudia Devico - Defensa Criminal de Alta Complejidad. <br>
+        Matrícula Profesional CPAC. Tribunales I, Córdoba.
+      </p>
+    </div>
+    <div class="flex gap-6 mt-4">
+      <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-zinc-400 hover:text-primary hover:bg-white/10 transition-all"
+        href="/" style="">
+        <span class="material-symbols-outlined" style="">share</span>
+      </a>
+      <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-zinc-400 hover:text-primary hover:bg-white/10 transition-all"
+        href="/" style="">
+        <span class="material-symbols-outlined" style="">mail</span>
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
