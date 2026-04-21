@@ -227,11 +227,13 @@
 <body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
   <!-- TopNavBar -->
   <nav class="fixed top-0 w-full z-50 bg-white shadow-sm border-b border-zinc-100">
-    <div class="flex justify-between items-center px-8 py-2 md:py-3 max-w-screen-2xl mx-auto relative">
-      <a href="/" class="flex items-center shrink-0">
-        <img src="devico andrea (1).png" alt="Dra. Claudia Devico"
-          class="h-20 md:h-28 w-auto object-contain mix-blend-multiply hover:scale-105 transition-transform duration-300">
-      </a>
+    <div class="flex justify-between items-center px-8 h-16 md:h-20 max-w-screen-2xl mx-auto relative">
+      <div class="w-48 md:w-64 flex items-center"> <!-- Reserved space for absolute logo -->
+        <a href="/" class="absolute top-1/2 -translate-y-1/2 flex items-center shrink-0">
+          <img src="devico andrea (1).png" alt="Dra. Claudia Devico"
+            class="h-24 md:h-32 w-auto object-contain mix-blend-multiply hover:scale-110 transition-transform duration-300">
+        </a>
+      </div>
       <div class="hidden md:flex gap-8 font-['Newsreader'] text-lg tracking-tight items-center">
         <a class="text-amber-800 dark:text-amber-400 font-medium border-b border-amber-600 pb-1"
           href="#especialidades">Especialidades</a>
