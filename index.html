@@ -29,7 +29,7 @@
 
   <link rel="icon" type="image/png" href="favicon-final.png">
 
-  <!-- Structured Data (JSON-LD) for AI Search & Google -->
+  <!-- Structured Data (JSON-LD) for AI Search & Google (GEO & SEO) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -39,6 +39,7 @@
     "@id": "https://abogadadevico.com/#legal-service",
     "url": "https://abogadadevico.com/",
     "telephone": "+5493571578237",
+    "email": "contacto@abogadadevico.com",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Sarmiento 102-200",
@@ -72,7 +73,36 @@
       "https://maps.app.goo.gl/rJcIZ690bPaQAPcRI"
     ],
     "priceRange": "$$$",
-    "description": "Estudio jurídico especializado en derecho penal de alta complejidad en la ciudad de Córdoba, Argentina."
+    "description": "Estudio jurídico penal especializado en defensa criminal de alta complejidad en el Fuero Penal de Córdoba y Tribunales Federales.",
+    "knowsAbout": [
+      "Derecho Penal",
+      "Defensa Criminal de Alta Complejidad",
+      "Defensa en Falsas Denuncias",
+      "Litigación en Juicios por Jurados Populares",
+      "Defensa en Delitos contra la Integridad Sexual",
+      "Defensa en Homicidios",
+      "Excarcelaciones y Cese de Prisión",
+      "Apelaciones y Recursos de Casación TSJ",
+      "Defensa Técnica en el Fuero Federal de Córdoba"
+    ],
+    "areaServed": [
+      {
+        "@type": "AdministrativeArea",
+        "name": "Provincia de Córdoba"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Ciudad de Córdoba"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Río Tercero"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Tribunales Federales de Córdoba"
+      }
+    ]
   }
   </script>
   <script type="application/ld+json">
@@ -85,12 +115,22 @@
       "@type": "Organization",
       "name": "Dra. Claudia Devico - Defensa Criminal"
     },
-    "description": "Especialista en Defensa Criminal de Alta Complejidad con más de 20 años de trayectoria en el Fuero Penal de Córdoba.",
-    "url": "https://abogadadevico.com/"
+    "description": "Especialista en Defensa Criminal de Alta Complejidad con más de 20 años de trayectoria en el Fuero Penal de Córdoba y Tribunales Federales de Argentina.",
+    "url": "https://abogadadevico.com/",
+    "memberOf": {
+      "@type": "Organization",
+      "name": "Colegio de Abogados de la Provincia de Córdoba"
+    },
+    "knowsAbout": [
+      "Derecho Penal",
+      "Derecho Procesal Penal",
+      "Litigación Oral",
+      "Juicios por Jurados (Ley 9182 Córdoba)"
+    ]
   }
   </script>
 
-  <!-- FAQ Structured Data -->
+  <!-- FAQ Structured Data for Voice & AI Searches -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -101,20 +141,37 @@
         "name": "¿Qué hacer ante una detención de urgencia en Córdoba?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Ante una detención, el tiempo es crítico. Debe contactar inmediatamente a un abogado penalista. Ofrecemos asistencia técnica las 24 horas para defensa en Tribunales I, II y Fuero Federal."
+          "text": "Ante una detención, el tiempo es crítico. Debe contactar inmediatamente a un abogado penalista matriculado. Ofrecemos asistencia técnica penal las 24 horas del día para urgencias y detenciones en Tribunales I, II y Fuero Federal de Córdoba."
         }
       },
       {
         "@type": "Question",
-        "name": "¿En qué casos se especializa la Dra. Claudia Devico?",
+        "name": "¿En qué casos penales se especializa la Dra. Claudia Devico?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Nos especializamos en causas criminales de alta complejidad, incluyendo falsas denuncias, delitos contra la integridad sexual, homicidios y defensa técnica en juicios por jurados."
+          "text": "El estudio se especializa exclusivamente en derecho penal y defensa criminal de alta complejidad, incluyendo casos de falsas denuncias, delitos contra la integridad sexual, homicidios, estafas y representación en Juicios por Jurados Populares en Córdoba."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo defenderse ante una imputación por falsa denuncia en Córdoba?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La defensa ante una falsa denuncia exige una recopilación inmediata y estratégica de pruebas materiales (geolocalización, chats de WhatsApp respaldados, correos, testigos) y una presentación espontánea inmediata ante la Fiscalía de Instrucción interviniente con patrocinio letrado penalista especializado para solicitar el archivo o sobreseimiento."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo es el procedimiento de Juicio por Jurados Populares en Córdoba?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "En la provincia de Córdoba, según la Ley 9182, los delitos graves como homicidios calificados, femicidios y ciertos hechos de corrupción son juzgados obligatoriamente por jurados populares formados por ciudadanos comunes y jueces técnicos. La defensa en estos juicios requiere destrezas avanzadas de litigación oral y persuasión."
         }
       }
     ]
   }
   </script>
+
 
   <!-- Fonts -->
   <link
@@ -229,23 +286,31 @@
 
 <body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
   <!-- TopNavBar -->
-  <nav class="fixed top-0 w-full z-50 bg-white shadow-sm border-b border-zinc-100">
+  <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm border-b border-zinc-100/50">
     <div class="flex justify-between items-center px-8 py-2 md:py-3 max-w-screen-2xl mx-auto relative">
       <a href="/" class="flex items-center shrink-0 -my-2 md:-my-4">
-        <img src="devico andrea (1).png" alt="Dra. Claudia Devico"
+        <img src="devico andrea (1).png" alt="Estudio Jurídico Devico Claudia - Abogada Penalista en Córdoba"
           class="h-20 md:h-28 w-auto object-contain mix-blend-multiply transition-transform hover:scale-105">
       </a>
+      <!-- Mobile Call CTA -->
+      <div class="flex md:hidden items-center">
+        <a href="https://wa.me/5493571578237" target="_blank"
+          class="gold-pulse bg-primary text-on-primary px-4 py-2 font-bold rounded-lg text-xs uppercase tracking-wider flex items-center gap-1.5 hover:brightness-110 active:scale-95 shadow-md no-underline">
+          <span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">emergency</span>
+          Urgencias
+        </a>
+      </div>
       <div class="hidden md:flex gap-8 font-['Newsreader'] text-lg tracking-tight items-center">
         <a class="text-amber-800 dark:text-amber-400 font-medium border-b border-amber-600 pb-1"
           href="#especialidades">Especialidades</a>
         <a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors pb-1"
-          href="https://wa.me/5493571578237" target="_blank">Urgencia Detenidos</a>
+          href="https://wa.me/5493571578237" target="_blank">Retirar Detenidos</a>
         <a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors pb-1"
           href="#especialidades">Casos de Éxito</a>
         <a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors pb-1"
           href="#contacto">Contacto</a>
       </div>
-      <div class="flex items-center gap-4">
+      <div class="hidden md:flex items-center gap-4">
         <a target="_blank" href="https://www.instagram.com/abogadaclaudiadevico/"
           class="text-zinc-600 hover:text-primary transition-colors flex items-center" aria-label="Instagram">
           <svg class="w-6 h-6 md:w-7 md:h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -265,17 +330,17 @@
     </div>
   </nav>
   <!-- Hero Section -->
-  <header class="relative min-h-screen flex items-center pt-32 lg:pt-40 overflow-hidden bg-zinc-950">
+  <header class="relative min-h-screen flex items-center pt-32 lg:pt-40 pb-24 lg:pb-32 overflow-hidden bg-zinc-950">
     <div class="absolute inset-0 opacity-60">
       <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=2000"
-        alt="Justicia Profesional" class="w-full h-full object-cover">
+        alt="Estudio de la Dra. Claudia Devico - Defensa Criminal y Alta Complejidad Penal en Córdoba" class="w-full h-full object-cover">
     </div>
     <div class="absolute inset-0 bg-gradient-to-b from-zinc-950/20 via-zinc-950/50 to-zinc-950"></div>
     <div class="relative z-10 max-w-screen-2xl mx-auto px-8 w-full grid grid-cols-1 lg:grid-cols-12 gap-12">
       <div class="lg:col-span-8 flex flex-col justify-center">
         <span class="text-primary font-bold tracking-[0.3em] uppercase mb-4 text-sm">Alta Complejidad
           Penal</span>
-        <h1 class="font-headline text-5xl md:text-7xl lg:text-8xl text-white leading-tight mb-8">
+        <h1 class="font-headline text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white leading-tight mb-8">
           <span class="block text-2xl md:text-3xl opacity-80 font-body mb-2">Estudio Jurídico</span>
           <span class="block">Devico Claudia</span>
           <span class="text-primary italic">Abogada Penalista</span>
@@ -284,15 +349,14 @@
           Estrategia jurídica de élite para causas críticas. Representación técnica especializada en el Fuero Penal de
           Córdoba y Tribunales Federales.
         </p>
-        <div class="flex flex-col sm:flex-row gap-6 items-start">
+        <div class="flex flex-col sm:flex-row gap-6 items-stretch sm:items-start w-full">
           <a target="_blank" href="https://wa.me/5493571578237"
-            class="gold-pulse bg-primary text-on-primary px-8 py-4 font-bold flex items-center gap-3 no-underline rounded-lg hover:brightness-110 transition-all">
-            <span class="material-symbols-outlined"
-              style="font-variation-settings: &quot;FILL&quot; 1;">emergency</span>
-            URGENCIA 24hs - DETENIDOS
+            class="w-full sm:w-auto gold-pulse bg-primary text-on-primary px-8 py-4 font-bold flex items-center justify-center gap-3 no-underline rounded-lg hover:brightness-110 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/20 transition-all duration-300">
+            <span class="material-symbols-outlined">emergency</span>
+            RETIRAR DETENIDOS
           </a>
           <button onclick="document.getElementById('contacto').scrollIntoView({behavior: 'smooth'})"
-            class="glass-card border border-white/10 text-white px-8 py-4 font-medium backdrop-blur-md hover:bg-white/10 rounded-lg transition-all group flex items-center gap-3">
+            class="w-full sm:w-auto glass-card border border-white/10 text-white px-8 py-4 font-medium backdrop-blur-md hover:bg-white/10 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-white/5 rounded-lg transition-all duration-300 group flex items-center justify-center gap-3">
             Solicitar Estrategia de Defensa
             <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
           </button>
@@ -301,16 +365,16 @@
       <div class="lg:col-span-4 hidden lg:flex items-center justify-end">
         <div class="p-8 border-l border-primary/30 space-y-8">
           <div>
-            <div class="text-primary font-bold text-3xl mb-1">20+</div>
-            <div class="text-zinc-500 text-xs uppercase tracking-widest">Años de Trayectoria</div>
+            <div class="text-primary font-bold text-3xl mb-1">Absoluto</div>
+            <div class="text-zinc-500 text-xs uppercase tracking-widest">Secreto Profesional</div>
           </div>
           <div>
-            <div class="text-primary font-bold text-3xl mb-1">94%</div>
-            <div class="text-zinc-500 text-xs uppercase tracking-widest">Efectividad en Juicio</div>
+            <div class="text-primary font-bold text-3xl mb-1">Estratégica</div>
+            <div class="text-zinc-500 text-xs uppercase tracking-widest">Defensa Jurídica a Medida</div>
           </div>
           <div>
-            <div class="text-primary font-bold text-3xl mb-1">Confidencial</div>
-            <div class="text-zinc-500 text-xs uppercase tracking-widest">Protocolo de Privacidad</div>
+            <div class="text-primary font-bold text-3xl mb-1">24 Horas</div>
+            <div class="text-zinc-500 text-xs uppercase tracking-widest">Disponibilidad para Urgencias</div>
           </div>
         </div>
       </div>
@@ -319,7 +383,7 @@
   <main class="max-w-screen-2xl mx-auto px-8 py-24 grid grid-cols-1 lg:grid-cols-12 gap-16">
     <!-- Central Feed & Specialties -->
     <div class="lg:col-span-8">
-      <section id="especialidades" class="mb-24">
+      <section id="especialidades" class="mb-24 scroll-mt-24">
         <div class="flex items-center justify-between mb-12">
           <h2 class="font-headline text-4xl text-zinc-900 italic">Especialidades Críticas</h2>
           <div class="h-px bg-outline-variant flex-grow ml-8 opacity-30"></div>
@@ -327,12 +391,14 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <!-- Card 1 -->
           <div
-            class="bg-white border border-zinc-100 p-8 rounded-lg relative overflow-hidden group hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
+            class="bg-white border border-zinc-100 hover:border-primary/30 p-8 rounded-lg relative overflow-hidden group hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
             <div
               class="absolute top-4 right-4 bg-primary/10 text-primary text-[10px] font-bold px-2 py-1 uppercase tracking-tighter border border-primary/20">
               Consulta Confidencial
             </div>
-            <span class="material-symbols-outlined text-primary mb-6 text-4xl" data-icon="gavel">gavel</span>
+            <div class="w-12 h-12 rounded-lg bg-primary/5 flex items-center justify-center mb-6 group-hover:bg-primary transition-all duration-300">
+              <span class="material-symbols-outlined text-primary group-hover:text-white text-2xl transition-colors duration-300" data-icon="gavel">gavel</span>
+            </div>
             <h3 class="font-headline text-2xl mb-4">Falsas Denuncias</h3>
             <div class="space-y-3 text-sm text-on-surface-variant font-medium">
               <div class="flex justify-between border-b border-outline-variant/30 pb-2">
@@ -351,12 +417,14 @@
           </div>
           <!-- Card 2 -->
           <div
-            class="bg-white border border-zinc-100 p-8 rounded-lg relative overflow-hidden group hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
+            class="bg-white border border-zinc-100 hover:border-primary/30 p-8 rounded-lg relative overflow-hidden group hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
             <div
               class="absolute top-4 right-4 bg-primary/10 text-primary text-[10px] font-bold px-2 py-1 uppercase tracking-tighter border border-primary/20">
               Consulta Confidencial
             </div>
-            <span class="material-symbols-outlined text-primary mb-6 text-4xl" data-icon="shield">shield</span>
+            <div class="w-12 h-12 rounded-lg bg-primary/5 flex items-center justify-center mb-6 group-hover:bg-primary transition-all duration-300">
+              <span class="material-symbols-outlined text-primary group-hover:text-white text-2xl transition-colors duration-300" data-icon="shield">shield</span>
+            </div>
             <h3 class="font-headline text-2xl mb-4">Abusos</h3>
             <div class="space-y-3 text-sm text-on-surface-variant font-medium">
               <div class="flex justify-between border-b border-outline-variant/30 pb-2">
@@ -375,12 +443,14 @@
           </div>
           <!-- Card 3 -->
           <div
-            class="bg-white border border-zinc-100 p-8 rounded-lg relative overflow-hidden group hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
+            class="bg-white border border-zinc-100 hover:border-primary/30 p-8 rounded-lg relative overflow-hidden group hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
             <div
               class="absolute top-4 right-4 bg-primary/10 text-primary text-[10px] font-bold px-2 py-1 uppercase tracking-tighter border border-primary/20">
               Consulta Confidencial
             </div>
-            <span class="material-symbols-outlined text-primary mb-6 text-4xl" data-icon="balance">balance</span>
+            <div class="w-12 h-12 rounded-lg bg-primary/5 flex items-center justify-center mb-6 group-hover:bg-primary transition-all duration-300">
+              <span class="material-symbols-outlined text-primary group-hover:text-white text-2xl transition-colors duration-300" data-icon="balance">balance</span>
+            </div>
             <h3 class="font-headline text-2xl mb-4">Homicidios</h3>
             <div class="space-y-3 text-sm text-on-surface-variant font-medium">
               <div class="flex justify-between border-b border-outline-variant/30 pb-2">
@@ -399,12 +469,14 @@
           </div>
           <!-- Card 4 -->
           <div
-            class="bg-white border border-zinc-100 p-8 rounded-lg relative overflow-hidden group hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
+            class="bg-white border border-zinc-100 hover:border-primary/30 p-8 rounded-lg relative overflow-hidden group hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
             <div
               class="absolute top-4 right-4 bg-primary/10 text-primary text-[10px] font-bold px-2 py-1 uppercase tracking-tighter border border-primary/20">
               Consulta Confidencial
             </div>
-            <span class="material-symbols-outlined text-primary mb-6 text-4xl" data-icon="policy">policy</span>
+            <div class="w-12 h-12 rounded-lg bg-primary/5 flex items-center justify-center mb-6 group-hover:bg-primary transition-all duration-300">
+              <span class="material-symbols-outlined text-primary group-hover:text-white text-2xl transition-colors duration-300" data-icon="policy">policy</span>
+            </div>
             <h3 class="font-headline text-2xl mb-4">Baja Imputabilidad</h3>
             <div class="space-y-3 text-sm text-on-surface-variant font-medium">
               <div class="flex justify-between border-b border-outline-variant/30 pb-2">
@@ -477,13 +549,14 @@
             Suscribirme al newsletter
           </button>
         </div>
-        <div class="bg-primary-container/10 p-8">
-          <h5 class="font-headline text-lg mb-4 italic">Asistencia Legal Inmediata</h5>
-          <p class="text-sm mb-6 opacity-80">Si usted o un familiar ha sido detenido, el tiempo es the factor
+        <div class="bg-zinc-900 text-white p-8 rounded-xl border border-white/10 relative overflow-hidden shadow-xl">
+          <div class="absolute -top-12 -right-12 w-32 h-32 bg-primary/10 rounded-full blur-2xl"></div>
+          <h5 class="font-headline text-xl mb-4 italic text-primary">Asistencia Legal Inmediata</h5>
+          <p class="text-sm mb-6 opacity-75 text-zinc-300">Si usted o un familiar ha sido detenido, el tiempo es el factor
             más crítico. Contacte a nuestra unidad de respuesta rápida.</p>
           <a onclick="handleContact('tel')"
-            class="flex items-center justify-center gap-3 bg-zinc-950 text-white py-4 font-bold text-lg hover:bg-zinc-900 rounded-lg transition-colors cursor-pointer">
-            <span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">call</span>
+            class="flex items-center justify-center gap-3 bg-primary text-on-primary py-4 font-bold text-lg hover:brightness-110 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/20 rounded-lg transition-all duration-300 cursor-pointer">
+            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">call</span>
             Llamar Ahora
           </a>
         </div>
@@ -495,9 +568,9 @@
     class="fixed inset-0 z-[100] flex items-center justify-center pointer-events-none opacity-0 transition-opacity duration-300"
     id="secureModal">
     <div class="absolute inset-0 bg-zinc-950/90 backdrop-blur-xl"></div>
-    <div class="relative z-10 glass-card p-12 max-w-md w-full text-center border border-white/10 rounded-2xl">
+    <div class="relative z-10 glass-card p-8 md:p-12 max-w-md w-[calc(100%-2rem)] mx-auto text-center border border-white/10 rounded-2xl">
       <span class="material-symbols-outlined text-primary text-6xl mb-6">security</span>
-      <h3 class="text-white font-headline text-2xl mb-4">Estableciendo conexin cifrada segura...</h3>
+      <h3 class="text-white font-headline text-2xl mb-4">Estableciendo conexión cifrada segura...</h3>
       <div class="w-full bg-white/10 h-1 mb-8 overflow-hidden">
         <div class="bg-primary h-full w-1/2 animate-[progress_2s_ease-in-out_infinite]"></div>
       </div>
@@ -517,7 +590,7 @@
     }
   </style>
   <!-- Contact Form Section -->
-  <section class="bg-slate-100 text-zinc-900 py-24 border-t border-zinc-200" id="contacto">
+  <section class="bg-slate-100 text-zinc-900 py-24 border-t border-zinc-200 scroll-mt-24" id="contacto">
     <div class="max-w-screen-2xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-16">
       <div class="lg:col-span-5">
         <h2 class="font-headline text-5xl italic mb-8 text-zinc-900">Contacto Profesional</h2>
@@ -576,7 +649,7 @@
               <label class="text-[10px] font-bold uppercase tracking-widest text-zinc-500" for="email">Correo
                 Electrónico</label>
               <input type="email" id="email" name="email" required
-                class="w-full bg-zinc-50 border border-zinc-200 px-4 py-3 focus:outline-none focus:border-primary transition-colors font-medium text-black placeholder:text-zinc-400">
+                class="w-full bg-zinc-50 border border-zinc-200 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-medium text-black placeholder:text-zinc-400">
             </div>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -584,14 +657,14 @@
               <label class="text-[10px] font-bold uppercase tracking-widest text-zinc-500" for="phone">Teléfono /
                 WhatsApp</label>
               <input type="tel" id="phone" name="phone"
-                class="w-full bg-zinc-50 border border-zinc-200 px-4 py-3 focus:outline-none focus:border-primary transition-colors font-medium text-black placeholder:text-zinc-400">
+                class="w-full bg-zinc-50 border border-zinc-200 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-medium text-black placeholder:text-zinc-400">
             </div>
             <div class="space-y-2">
               <label class="text-[10px] font-bold uppercase tracking-widest text-zinc-500" for="subject">Motivo de
                 Consulta</label>
               <select id="subject" name="subject"
-                class="w-full bg-zinc-50 border border-zinc-200 px-4 py-3 focus:outline-none focus:border-primary transition-colors font-medium text-black">
-                <option value="Urgencia">Urgencia / Detenidos</option>
+                class="w-full bg-zinc-50 border border-zinc-200 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-medium text-black">
+                <option value="Urgencia">Retirar Detenidos</option>
                 <option value="Especialidad">Especialidades Penales</option>
                 <option value="Otro">Otro motivo</option>
               </select>
@@ -601,7 +674,7 @@
             <label class="text-[10px] font-bold uppercase tracking-widest text-zinc-500" for="message">Mensaje / Breve
               Resumen del Caso</label>
             <textarea id="message" name="message" rows="4" required
-              class="w-full bg-zinc-50 border border-zinc-200 px-4 py-3 focus:outline-none focus:border-primary transition-colors font-medium resize-none text-black placeholder:text-zinc-400"></textarea>
+              class="w-full bg-zinc-50 border border-zinc-200 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-medium resize-none text-black placeholder:text-zinc-400"></textarea>
           </div>
           <button type="submit"
             class="w-full bg-zinc-950 text-white py-4 font-bold uppercase tracking-widest hover:bg-zinc-900 rounded-lg transition-all shadow-lg active:scale-[0.99]">
@@ -617,7 +690,7 @@
   <!-- Footer -->
   <footer class="bg-zinc-950 w-full py-16 px-8 flex flex-col items-center gap-6 border-t border-zinc-800">
     <div class="h-28 md:h-36 mb-2 flex items-center justify-center overflow-visible">
-      <img src="devico andrea (1).png" alt="Dra. Claudia Devico"
+      <img src="devico andrea (1).png" alt="Logotipo Oficial Dra. Claudia Devico - Abogada Penalista Córdoba"
         class="h-full w-auto object-contain invert grayscale contrast-200 mix-blend-screen opacity-90">
     </div>
     <div class="flex flex-wrap justify-center gap-8 font-['Manrope'] text-xs uppercase tracking-widest text-zinc-500">
