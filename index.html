@@ -285,10 +285,63 @@
         box-shadow: 0 0 0 0 rgba(120, 89, 22, 0);
       }
     }
+
+    /* Scroll Reveal Animation styling */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 1s cubic-bezier(0.2, 0.8, 0.2, 1), transform 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Hero Entry Animation styling */
+    .hero-animate {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    .hero-animate.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .delay-100 { transition-delay: 100ms; }
+    .delay-200 { transition-delay: 200ms; }
+    .delay-300 { transition-delay: 300ms; }
+    .delay-400 { transition-delay: 400ms; }
+
+    @keyframes fillProgress {
+      0% { width: 0%; }
+      100% { width: 100%; }
+    }
   </style>
 </head>
 
 <body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+  <!-- Premium Loading Preloader -->
+  <div id="preloader" class="fixed inset-0 z-[9999] bg-zinc-950 flex flex-col items-center justify-center transition-all duration-700 ease-in-out">
+    <div class="relative flex flex-col items-center max-w-xs text-center space-y-6">
+      <!-- Animated Gold Scale/Balance Icon -->
+      <div class="w-16 h-16 rounded-full border border-primary/20 flex items-center justify-center bg-zinc-900/50 relative overflow-hidden group">
+        <span class="material-symbols-outlined text-primary text-3xl animate-[pulse_2s_infinite]">balance</span>
+        <div class="absolute inset-0 border-t-2 border-primary rounded-full animate-spin"></div>
+      </div>
+      <div class="space-y-2">
+        <h2 class="font-headline text-2xl text-white italic tracking-wide">Dra. Claudia Devico</h2>
+        <p class="text-zinc-500 font-['Manrope'] text-[9px] uppercase tracking-[0.25em]">Defensa Criminal de Alta Complejidad</p>
+      </div>
+      <!-- Tiny Progress Bar -->
+      <div class="w-40 bg-zinc-900 h-[2px] rounded-full overflow-hidden relative border border-white/5">
+        <div class="bg-gradient-to-r from-primary-container to-primary h-full rounded-full w-0 animate-[fillProgress_1.5s_ease-out_forwards]"></div>
+      </div>
+      <span class="text-[9px] text-zinc-600 font-['Manrope'] uppercase tracking-widest animate-pulse">Estableciendo canal seguro...</span>
+    </div>
+  </div>
   <!-- TopNavBar -->
   <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm border-b border-zinc-100/50">
     <div class="flex justify-between items-center px-8 py-2 md:py-3 max-w-screen-2xl mx-auto relative">
@@ -342,18 +395,18 @@
     <div class="absolute inset-0 bg-gradient-to-b from-zinc-950/20 via-zinc-950/50 to-zinc-950"></div>
     <div class="relative z-10 max-w-screen-2xl mx-auto px-8 w-full grid grid-cols-1 lg:grid-cols-12 gap-12">
       <div class="lg:col-span-8 flex flex-col justify-center">
-        <span class="text-primary font-bold tracking-[0.3em] uppercase mb-4 text-sm">Alta Complejidad
+        <span class="hero-animate text-primary font-bold tracking-[0.3em] uppercase mb-4 text-sm">Alta Complejidad
           Penal</span>
-        <h1 class="font-headline text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white leading-tight mb-8">
+        <h1 class="hero-animate delay-100 font-headline text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white leading-tight mb-8">
           <span class="block text-2xl md:text-3xl opacity-80 font-body mb-2">Estudio Jurídico</span>
           <span class="block">Devico Claudia</span>
           <span class="text-primary italic">Abogada Penalista</span>
         </h1>
-        <p class="text-zinc-400 text-xl max-w-2xl mb-12 font-medium leading-relaxed">
+        <p class="hero-animate delay-200 text-zinc-400 text-xl max-w-2xl mb-12 font-medium leading-relaxed">
           Estrategia jurídica de élite para causas críticas. Representación técnica especializada en el Fuero Penal de
           Córdoba y Tribunales Federales.
         </p>
-        <div class="flex flex-col sm:flex-row gap-6 items-stretch sm:items-start w-full">
+        <div class="hero-animate delay-300 flex flex-col sm:flex-row gap-6 items-stretch sm:items-start w-full">
           <a target="_blank" href="https://wa.me/5493571578237"
             class="w-full sm:w-auto gold-pulse bg-primary text-on-primary px-8 py-4 font-bold flex items-center justify-center gap-3 no-underline rounded-lg hover:brightness-110 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/20 transition-all duration-300">
             <span class="material-symbols-outlined">emergency</span>
@@ -367,7 +420,7 @@
         </div>
       </div>
       <div class="lg:col-span-4 hidden lg:flex items-center justify-end">
-        <div class="p-8 border-l border-primary/30 space-y-8">
+        <div class="hero-animate delay-400 p-8 border-l border-primary/30 space-y-8">
           <div>
             <div class="text-primary font-bold text-3xl mb-1">Absoluto</div>
             <div class="text-zinc-500 text-xs uppercase tracking-widest">Secreto Profesional</div>
@@ -395,7 +448,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <!-- Card 1 -->
           <div
-            class="bg-white border border-zinc-100 hover:border-primary/30 p-8 rounded-lg relative overflow-hidden group hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
+            class="reveal bg-white border border-zinc-100 hover:border-primary/30 p-8 rounded-lg relative overflow-hidden group hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
             <div
               class="absolute top-4 right-4 bg-primary/10 text-primary text-[10px] font-bold px-2 py-1 uppercase tracking-tighter border border-primary/20">
               Consulta Confidencial
@@ -421,7 +474,7 @@
           </div>
           <!-- Card 2 -->
           <div
-            class="bg-white border border-zinc-100 hover:border-primary/30 p-8 rounded-lg relative overflow-hidden group hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
+            class="reveal bg-white border border-zinc-100 hover:border-primary/30 p-8 rounded-lg relative overflow-hidden group hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
             <div
               class="absolute top-4 right-4 bg-primary/10 text-primary text-[10px] font-bold px-2 py-1 uppercase tracking-tighter border border-primary/20">
               Consulta Confidencial
@@ -447,7 +500,7 @@
           </div>
           <!-- Card 3 -->
           <div
-            class="bg-white border border-zinc-100 hover:border-primary/30 p-8 rounded-lg relative overflow-hidden group hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
+            class="reveal bg-white border border-zinc-100 hover:border-primary/30 p-8 rounded-lg relative overflow-hidden group hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
             <div
               class="absolute top-4 right-4 bg-primary/10 text-primary text-[10px] font-bold px-2 py-1 uppercase tracking-tighter border border-primary/20">
               Consulta Confidencial
@@ -473,7 +526,7 @@
           </div>
           <!-- Card 4 -->
           <div
-            class="bg-white border border-zinc-100 hover:border-primary/30 p-8 rounded-lg relative overflow-hidden group hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
+            class="reveal bg-white border border-zinc-100 hover:border-primary/30 p-8 rounded-lg relative overflow-hidden group hover:shadow-xl hover:-translate-y-1 transition-all duration-500">
             <div
               class="absolute top-4 right-4 bg-primary/10 text-primary text-[10px] font-bold px-2 py-1 uppercase tracking-tighter border border-primary/20">
               Consulta Confidencial
@@ -602,7 +655,7 @@
 
     <div class="max-w-screen-2xl mx-auto px-8 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
       <!-- Left Column: Biography and Unique Value Proposition -->
-      <div class="lg:col-span-6 space-y-8">
+      <div class="reveal lg:col-span-6 space-y-8">
         <span class="inline-flex items-center gap-2 px-3 py-1 text-xs font-bold uppercase tracking-wider bg-primary/20 text-primary-container border border-primary/30 rounded-full">
           <span class="material-symbols-outlined text-xs">workspace_premium</span>
           Doble Titulación Excepcional
@@ -629,7 +682,7 @@
       <!-- Right Column: Specific Medical/Surgical Niche Cards -->
       <div class="lg:col-span-6 space-y-6">
         <!-- Card 1 -->
-        <div class="glass-card border border-white/10 p-8 rounded-xl flex gap-6 hover:border-primary/30 transition-all duration-300 hover:translate-x-1">
+        <div class="reveal glass-card border border-white/10 p-8 rounded-xl flex gap-6 hover:border-primary/30 transition-all duration-300 hover:translate-x-1">
           <div class="shrink-0 w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary-container">
             <span class="material-symbols-outlined text-3xl">medical_services</span>
           </div>
@@ -642,7 +695,7 @@
         </div>
 
         <!-- Card 2 -->
-        <div class="glass-card border border-white/10 p-8 rounded-xl flex gap-6 hover:border-primary/30 transition-all duration-300 hover:translate-x-1">
+        <div class="reveal glass-card border border-white/10 p-8 rounded-xl flex gap-6 hover:border-primary/30 transition-all duration-300 hover:translate-x-1">
           <div class="shrink-0 w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary-container">
             <span class="material-symbols-outlined text-3xl">description</span>
           </div>
@@ -655,7 +708,7 @@
         </div>
 
         <!-- Card 3 -->
-        <div class="glass-card border border-white/10 p-8 rounded-xl flex gap-6 hover:border-primary/30 transition-all duration-300 hover:translate-x-1">
+        <div class="reveal glass-card border border-white/10 p-8 rounded-xl flex gap-6 hover:border-primary/30 transition-all duration-300 hover:translate-x-1">
           <div class="shrink-0 w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary-container">
             <span class="material-symbols-outlined text-3xl">admin_panel_settings</span>
           </div>
@@ -834,6 +887,43 @@
       const data = type === 'mail' ? 'contacto@abogadadevico.com' : '+5493571578237';
       window.location.href = (type === 'mail' ? 'mailto:' : 'tel:') + data;
     }
+
+    // Modern Premium Animations and Preloader controller
+    window.addEventListener('DOMContentLoaded', () => {
+      const preloader = document.getElementById('preloader');
+      
+      // Hide Preloader and trigger entry animations
+      setTimeout(() => {
+        if (preloader) {
+          preloader.classList.add('opacity-0', 'pointer-events-none');
+        }
+        
+        // Trigger initial Hero animations
+        document.querySelectorAll('.hero-animate').forEach(el => {
+          el.classList.add('active');
+        });
+      }, 1300);
+
+      // Intersection Observer for scroll reveal animations
+      const revealCallback = (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target); // Reveal only once
+          }
+        });
+      };
+
+      const revealObserver = new IntersectionObserver(revealCallback, {
+        root: null,
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      });
+
+      document.querySelectorAll('.reveal').forEach(el => {
+        revealObserver.observe(el);
+      });
+    });
   </script>
 </body>
 
