@@ -311,9 +311,11 @@
     }
 
     .delay-100 { transition-delay: 100ms; }
-    .delay-200 { transition-delay: 200ms; }
     .delay-300 { transition-delay: 300ms; }
-    .delay-400 { transition-delay: 400ms; }
+    .delay-500 { transition-delay: 500ms; }
+    .delay-800 { transition-delay: 800ms; }
+    .delay-1100 { transition-delay: 1100ms; }
+    .delay-1400 { transition-delay: 1400ms; }
 
     @keyframes fillProgress {
       0% { width: 0%; }
@@ -347,7 +349,7 @@
     <div class="flex justify-between items-center px-8 py-2 md:py-3 max-w-screen-2xl mx-auto relative">
       <a href="/" class="flex items-center shrink-0 -my-2 md:-my-4">
         <img src="devico andrea (1).png" alt="Estudio Jurídico Devico Claudia - Abogada Penalista en Córdoba"
-          class="h-20 md:h-28 w-auto object-contain mix-blend-multiply transition-transform hover:scale-105">
+          class="hero-animate delay-800 h-20 md:h-28 w-auto object-contain mix-blend-multiply transition-transform hover:scale-105">
       </a>
       <!-- Mobile Call CTA -->
       <div class="flex md:hidden items-center">
@@ -363,7 +365,7 @@
         <a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors pb-1"
           href="#salud">Defensa en Salud</a>
         <a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors pb-1"
-          href="https://wa.me/5493571578237" target="_blank">Retirar Detenidos</a>
+          href="https://wa.me/5493571578237" target="_blank">Defensa de Detenidos</a>
         <a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors pb-1"
           href="#contacto">Contacto</a>
       </div>
@@ -395,22 +397,22 @@
     <div class="absolute inset-0 bg-gradient-to-b from-zinc-950/20 via-zinc-950/50 to-zinc-950"></div>
     <div class="relative z-10 max-w-screen-2xl mx-auto px-8 w-full grid grid-cols-1 lg:grid-cols-12 gap-12">
       <div class="lg:col-span-8 flex flex-col justify-center">
-        <span class="hero-animate text-primary font-bold tracking-[0.3em] uppercase mb-4 text-sm">Alta Complejidad
+        <span class="hero-animate delay-300 text-primary font-bold tracking-[0.3em] uppercase mb-4 text-sm">Alta Complejidad
           Penal</span>
-        <h1 class="hero-animate delay-100 font-headline text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white leading-tight mb-8">
+        <h1 class="hero-animate delay-500 font-headline text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white leading-tight mb-8">
           <span class="block text-2xl md:text-3xl opacity-80 font-body mb-2">Estudio Jurídico</span>
           <span class="block">Devico Claudia</span>
           <span class="text-primary italic">Abogada Penalista</span>
         </h1>
-        <p class="hero-animate delay-200 text-zinc-400 text-xl max-w-2xl mb-12 font-medium leading-relaxed">
+        <p class="hero-animate delay-800 text-zinc-400 text-xl max-w-2xl mb-12 font-medium leading-relaxed">
           Estrategia jurídica de élite para causas críticas. Representación técnica especializada en el Fuero Penal de
           Córdoba y Tribunales Federales.
         </p>
-        <div class="hero-animate delay-300 flex flex-col sm:flex-row gap-6 items-stretch sm:items-start w-full">
+        <div class="hero-animate delay-1100 flex flex-col sm:flex-row gap-6 items-stretch sm:items-start w-full">
           <a target="_blank" href="https://wa.me/5493571578237"
             class="w-full sm:w-auto gold-pulse bg-primary text-on-primary px-8 py-4 font-bold flex items-center justify-center gap-3 no-underline rounded-lg hover:brightness-110 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/20 transition-all duration-300">
             <span class="material-symbols-outlined">emergency</span>
-            RETIRAR DETENIDOS
+            DEFENSA DE DETENIDOS
           </a>
           <button onclick="document.getElementById('contacto').scrollIntoView({behavior: 'smooth'})"
             class="w-full sm:w-auto glass-card border border-white/10 text-white px-8 py-4 font-medium backdrop-blur-md hover:bg-white/10 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-white/5 rounded-lg transition-all duration-300 group flex items-center justify-center gap-3">
@@ -420,7 +422,7 @@
         </div>
       </div>
       <div class="lg:col-span-4 hidden lg:flex items-center justify-end">
-        <div class="hero-animate delay-400 p-8 border-l border-primary/30 space-y-8">
+        <div class="hero-animate delay-1400 p-8 border-l border-primary/30 space-y-8">
           <div>
             <div class="text-primary font-bold text-3xl mb-1">Absoluto</div>
             <div class="text-zinc-500 text-xs uppercase tracking-widest">Secreto Profesional</div>
@@ -798,7 +800,7 @@
                 Consulta</label>
               <select id="subject" name="subject"
                 class="w-full bg-zinc-50 border border-zinc-200 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-medium text-black">
-                <option value="Urgencia">Retirar Detenidos</option>
+                <option value="Urgencia">Defensa de Detenidos</option>
                 <option value="Especialidad">Especialidades Penales</option>
                 <option value="Otro">Otro motivo</option>
               </select>
