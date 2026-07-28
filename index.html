@@ -288,6 +288,9 @@
 
     /* Scroll Reveal Animation styling */
     .reveal {
+      opacity: 1 !important;
+      transform: none !important;
+
       opacity: 0;
       transform: translateY(30px);
       transition: opacity 1s cubic-bezier(0.2, 0.8, 0.2, 1), transform 1s cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -325,14 +328,7 @@
 </head>
 
 <body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
-  <!-- Premium Loading Preloader -->
-  <div id="preloader" class="fixed inset-0 z-[9999] bg-zinc-950 flex flex-col items-center justify-center transition-all duration-700 ease-in-out">
-    <div class="relative flex flex-col items-center max-w-xs text-center space-y-6">
-      <!-- Animated Gold Scale/Balance Icon -->
-      <div class="w-16 h-16 rounded-full border border-primary/20 flex items-center justify-center bg-zinc-900/50 relative overflow-hidden group">
-        <span class="material-symbols-outlined text-primary text-3xl animate-[pulse_2s_infinite]">balance</span>
-        <div class="absolute inset-0 border-t-2 border-primary rounded-full animate-spin"></div>
-      </div>
+  
       <div class="space-y-2">
         <h2 class="font-headline text-2xl text-white italic tracking-wide">Dra. Claudia Devico</h2>
         <p class="text-zinc-500 font-['Manrope'] text-[9px] uppercase tracking-[0.25em]">Defensa Criminal de Alta Complejidad</p>
@@ -566,10 +562,11 @@
           <p class="text-sm mb-6 opacity-75 text-zinc-300">Si usted o un familiar ha sido detenido, el tiempo es el factor
             más crítico. Contacte a nuestra unidad de respuesta rápida.</p>
           <a href="https://wa.me/5493571578237" target="_blank"
-  class="flex items-center justify-center gap-3 bg-[#25D366] text-white py-4 font-bold text-lg hover:bg-[#20ba5a] hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#25D366]/30 rounded-lg transition-all duration-300 no-underline">
-  <span class="material-symbols-outlined">chat</span>
-  WhatsApp Directo: +54 9 3571 57-8237
-</a>
+            class="flex items-center justify-center gap-3 bg-primary text-white py-3.5 px-6 font-semibold text-sm rounded-lg hover:bg-primary-container hover:text-on-primary-container hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 no-underline border border-amber-500/20 group">
+            <svg class="w-5 h-5 fill-current text-[#25D366] group-hover:scale-110 transition-transform" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.099 4.019 4.018-1.056z"/></svg>
+            <span>Consulta por WhatsApp</span>
+          </a>
+          <p class="text-center text-xs text-zinc-400 mt-3 font-mono tracking-wider">+54 9 3571 57-8237</p>
         </div>
       </div>
     </aside>
@@ -886,7 +883,7 @@
             <div class="space-y-2">
               <label class="text-[10px] font-bold uppercase tracking-widest text-zinc-500" for="phone">Número de Celular (WhatsApp) *</label>
               <input type="tel" id="phone" name="phone" required placeholder="+54 9 3571 57-8237"
-                class="w-full bg-zinc-50 border border-zinc-200 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-[#25D366]/30 focus:border-[#25D366] transition-all font-medium text-black placeholder:text-zinc-400">
+                class="w-full bg-zinc-50 border border-zinc-200 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-medium text-black placeholder:text-zinc-400">
             </div>
             <div class="space-y-2">
               <label class="text-[10px] font-bold uppercase tracking-widest text-zinc-500" for="subject">Motivo de
@@ -906,16 +903,19 @@
               class="w-full bg-zinc-50 border border-zinc-200 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-medium resize-none text-black placeholder:text-zinc-400"></textarea>
           </div>
           
-          <div class="space-y-2 border-t border-zinc-200 pt-4">
-            <label class="text-[10px] font-bold uppercase tracking-widest text-zinc-700 block" for="documental">Subir Documental / Archivos (PDF, Fotos, Resúmenes)</label>
-            <input type="file" id="documental" name="documental" multiple class="w-full text-xs text-zinc-600 file:mr-4 file:py-2.5 file:px-4 file:rounded-md file:border-0 file:text-xs file:font-bold file:bg-[#25D366]/10 file:text-[#128C7E] hover:file:bg-[#25D366]/20 cursor-pointer border border-zinc-200 rounded-md p-1 bg-zinc-50">
-            <p class="text-[11px] text-zinc-500 italic">Puede adjuntar pruebas, fotos o escritos (protegidos bajo secreto profesional).</p>
+          <div class="space-y-2 border-t border-zinc-200/80 pt-5 mt-2">
+            <label class="text-[10px] font-bold uppercase tracking-widest text-zinc-600 block flex items-center gap-2" for="documental">
+              <span class="material-symbols-outlined text-base text-primary">attach_file</span>
+              Subir Documental / Archivos (PDF, Fotos, Resúmenes)
+            </label>
+            <input type="file" id="documental" name="documental" multiple
+              class="w-full text-xs text-zinc-600 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-xs file:font-semibold file:bg-zinc-900 file:text-white hover:file:bg-primary file:transition-colors cursor-pointer border border-zinc-200 rounded-md p-2 bg-zinc-50/50">
+            <p class="text-[11px] text-zinc-400 italic">Puede adjuntar pruebas, imágenes o escritos protegidos bajo secreto profesional.</p>
           </div>
-
 <button type="submit"
-      class="w-full bg-[#25D366] text-white py-4 px-8 rounded-md font-bold text-lg hover:bg-[#20ba5a] active:scale-[0.98] transition-all duration-300 shadow-md shadow-[#25D366]/20 flex items-center justify-center gap-3">
-      <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.099 4.019 4.018-1.056z"/></svg>
-      Enviar y Agendar Cita por WhatsApp
+      class="w-full bg-zinc-900 text-white py-4 px-8 rounded-lg font-bold text-base hover:bg-primary active:scale-[0.99] transition-all duration-300 shadow-xl border border-zinc-800 flex items-center justify-center gap-3 group cursor-pointer">
+      <svg class="w-5 h-5 fill-current text-[#25D366] group-hover:scale-110 transition-transform" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.099 4.019 4.018-1.056z"/></svg>
+      <span>Enviar y Agendar Cita por WhatsApp</span>
     </button>
           <p class="text-[10px] text-zinc-400 text-center uppercase tracking-widest">
             Al enviar, usted acepta nuestro protocolo de confidencialidad y privacidad.
@@ -1028,6 +1028,13 @@
       });
     });
   </script>
+
+  <!-- Floating WhatsApp Badge -->
+  <a href="https://wa.me/5493571578237" target="_blank" aria-label="WhatsApp Urgencias"
+    class="fixed bottom-6 right-6 z-50 bg-zinc-900/90 text-white p-3.5 rounded-full shadow-2xl border border-white/10 backdrop-blur-md flex items-center justify-center group hover:bg-[#25D366] hover:text-white transition-all duration-300 hover:scale-110 no-underline">
+    <svg class="w-7 h-7 fill-current text-[#25D366] group-hover:text-white transition-colors" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.099 4.019 4.018-1.056z"/></svg>
+  </a>
 </body>
+
 
 </html>
