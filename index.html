@@ -117,7 +117,7 @@
       "@type": "Organization",
       "name": "Dra. Claudia Devico - Defensa Criminal"
     },
-    "description": "Especialista en Defensa Criminal de Alta Complejidad con más de 20 años de trayectoria y Licenciada en Instrumentación Quirúrgica en Córdoba, Argentina.",
+    "description": "Especialista en Defensa Criminal de Alta Complejidad con experiencia garantizada y Licenciada en Instrumentación Quirúrgica en Córdoba, Argentina.",
     "url": "https://abogadadevico.com/",
     "memberOf": {
       "@type": "Organization",
@@ -142,34 +142,50 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "¿Qué hacer ante una detención de urgencia en Córdoba?",
+        "name": "¿Qué hacer en los primeros minutos si detienen a un familiar?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Ante una detención, el tiempo es crítico. Debe contactar inmediatamente a un abogado penalista matriculado. Ofrecemos asistencia técnica penal las 24 horas del día para urgencias y detenciones en Tribunales I, II y Fuero Federal de Córdoba."
+          "text": "El tiempo en los primeros momentos es determinante. Debe comunicarse de inmediato al WhatsApp de urgencias +54 9 3571 57-8237. Nos apersonamos sin demora en la unidad judicial, comisaría o Fiscalía de Instrucción interviniente para constatar el estado del detenido, evitar irregularidades y solicitar su libertad o cese de contención."
         }
       },
       {
         "@type": "Question",
-        "name": "¿En qué casos penales se especializa la Dra. Claudia Devico?",
+        "name": "Tengo un familiar con prisión preventiva, ¿qué se puede hacer?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "El estudio se especializa exclusivamente en derecho penal y defensa criminal de alta complejidad, incluyendo casos de falsas denuncias, abusos sexuales, delitos juveniles y defensa técnica especializada en salud, mala praxis quirúrgica y responsabilidad profesional médica."
+          "text": "La prisión preventiva no es una condena definitiva. Se pueden interponer de inmediato recursos de apelación y oposiciones ante el Juez de Control, demostrando la inexistencia de riesgo procesal (arraigo familiar, laboral y falta de peligro de fuga) para solicitar el cese de prisión o el recupero de la libertad."
         }
       },
       {
         "@type": "Question",
-        "name": "¿Ofrece la Dra. Claudia Devico defensa para instrumentadores quirúrgicos y personal de salud?",
+        "name": "¿Cómo sigue el proceso penal tras la detención inicial?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sí. Gracias a su doble titulación como Abogada y Licenciada en Instrumentación Quirúrgica, la Dra. Claudia Devico ofrece una defensa altamente técnica de elite para instrumentadores quirúrgicos, médicos y enfermeros ante acusaciones penales o civiles de mala praxis, sumarios administrativos y auditorías clínicas."
+          "text": "Tras la detención, el fiscal fija la fecha para la declaración del imputado (art. 306 CPP Córdoba). Es fundamental la asistencia técnica previa. Posteriormente se abre la investigación preparatoria donde se ofrecen peritajes y pruebas defensivas."
         }
       },
       {
         "@type": "Question",
-        "name": "¿Cómo defenderse ante una imputación por falsa denuncia en Córdoba?",
+        "name": "¿Cuánto tiempo demora un proceso o juicio penal?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "La defensa ante una falsa denuncia exige una recopilación inmediata y estratégica de pruebas materiales (geolocalización, chats de WhatsApp respaldados, correos, testigos) y una presentación espontánea inmediata ante la Fiscalía de Instrucción interviniente con patrocinio letrado penalista especializado para solicitar el archivo o sobreseimiento."
+          "text": "La duración depende de la complejidad de la causa. Una intervención técnica temprana en la etapa de instrucción puede resolver la causa en meses mediante sobreseimiento o resolución anticipada, evitando llegar al juicio oral."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cómo defenderse estratégicamente ante una Falsa Denuncia?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Preservación urgente de pruebas digitales (chats, audios, geolocalización) y presentación espontánea inmediata ante la Fiscalía para desarticular la imputación antes del juicio."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿En qué consiste la defensa especializada en Salud e Instrumentación Quirúrgica?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Gracias a la doble titulación de la Dra. Claudia Devico (Abogada y Licenciada en Instrumentación Quirúrgica), auditamos directamente historias clínicas, partes anestésicos y protocolos quirúrgicos sin intermediarios."
         }
       }
     ]
@@ -255,6 +271,17 @@
   </script>
   <style>
     .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined' !important;
+      font-weight: normal;
+      font-style: normal;
+      display: inline-block;
+      line-height: 1;
+      text-transform: none;
+      letter-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      direction: ltr;
+      -webkit-font-smoothing: antialiased;
       font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
     }
 
@@ -301,24 +328,11 @@
       transform: translateY(0);
     }
 
-    /* Hero Entry Animation styling */
+    /* Hero Entry Animation styling - Instant visible for fast load */
     .hero-animate {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
-    }
-
-    .hero-animate.active {
       opacity: 1;
-      transform: translateY(0);
+      transform: none;
     }
-
-    .delay-100 { transition-delay: 100ms; }
-    .delay-300 { transition-delay: 300ms; }
-    .delay-500 { transition-delay: 500ms; }
-    .delay-800 { transition-delay: 800ms; }
-    .delay-1100 { transition-delay: 1100ms; }
-    .delay-1400 { transition-delay: 1400ms; }
 
     @keyframes fillProgress {
       0% { width: 0%; }
@@ -347,17 +361,23 @@
         <img src="assets/devico_logo_cropped.png" alt="Estudio Jurídico Devico Claudia - Abogada Penalista en Córdoba"
           class="h-14 md:h-20 w-auto object-contain transition-transform hover:scale-105">
       </a>
-      <!-- Mobile Call CTA -->
-      <div class="flex md:hidden items-center">
+      <!-- Mobile Call CTA & Hamburger Button -->
+      <div class="flex md:hidden items-center gap-2">
         <a href="https://wa.me/5493571578237" target="_blank"
-          class="gold-pulse bg-primary text-on-primary px-4 py-2 font-bold rounded-lg text-xs uppercase tracking-wider flex items-center gap-1.5 hover:brightness-110 active:scale-95 shadow-md no-underline">
+          class="gold-pulse bg-primary text-on-primary px-3.5 py-2 font-bold rounded-lg text-xs uppercase tracking-wider flex items-center gap-1.5 hover:brightness-110 active:scale-95 shadow-md no-underline">
           <span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">emergency</span>
           Urgencias
         </a>
+        <button id="mobile-menu-btn" type="button" aria-label="Abrir menú"
+          class="p-2 rounded-lg text-zinc-800 hover:bg-zinc-100 focus:outline-none transition-colors border border-zinc-200/80 bg-white cursor-pointer">
+          <span class="material-symbols-outlined text-2xl flex items-center justify-center" id="menu-icon">menu</span>
+        </button>
       </div>
-      <div class="hidden md:flex gap-8 font-['Newsreader'] text-lg tracking-tight items-center">
+      <div class="hidden md:flex gap-6 lg:gap-8 font-['Newsreader'] text-lg tracking-tight items-center">
         <a class="text-amber-800 dark:text-amber-400 font-medium border-b border-amber-600 pb-1"
           href="#especialidades">Especialidades</a>
+        <a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors pb-1"
+          href="#sobre-mi">Sobre mí</a>
         <a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors pb-1"
           href="#salud">Defensa en Salud</a>
         <a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors pb-1"
@@ -375,8 +395,9 @@
           </svg>
         </a>
         <a target="_blank" href="https://wa.me/5493571578237"
-          class="bg-primary text-on-primary px-6 py-2.5 font-medium hover:brightness-110 active:scale-95 transition-all shadow-sm rounded-lg no-underline inline-block">
-          Consulta Inmediata
+          class="bg-primary text-on-primary px-6 py-2.5 font-medium hover:brightness-110 active:scale-95 transition-all shadow-sm rounded-lg no-underline inline-flex items-center gap-2">
+          <svg class="w-4 h-4 fill-current text-[#25D366]" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.414 0 0 5.414 0 12.05c0 2.123.553 4.197 1.603 6.013L0 24l6.135-1.61a11.811 11.811 0 005.912 1.57h.005c6.632 0 12.046-5.414 12.046-12.05 0-3.212-1.25-6.232-3.52-8.502"/></svg>
+          <span>Consulta Inmediata</span>
         </a>
       </div>
       <div
@@ -384,6 +405,39 @@
       </div>
     </div>
   </nav>
+
+  <!-- Mobile Dropdown Menu Drawer -->
+  <div id="mobile-menu" class="hidden md:hidden fixed inset-x-0 top-[65px] bg-zinc-950/95 backdrop-blur-xl border-b border-zinc-800 shadow-2xl z-40 transition-all duration-300">
+    <div class="flex flex-col p-6 space-y-3 font-['Newsreader'] text-xl">
+      <a class="mobile-nav-link text-white font-medium hover:text-primary transition-colors py-2.5 border-b border-zinc-800/60 flex items-center justify-between no-underline" href="#especialidades">
+        <span>Especialidades</span>
+        <span class="material-symbols-outlined text-zinc-500 text-sm">chevron_right</span>
+      </a>
+      <a class="mobile-nav-link text-white font-medium hover:text-primary transition-colors py-2.5 border-b border-zinc-800/60 flex items-center justify-between no-underline" href="#sobre-mi">
+        <span>Sobre mí</span>
+        <span class="material-symbols-outlined text-zinc-500 text-sm">chevron_right</span>
+      </a>
+      <a class="mobile-nav-link text-white font-medium hover:text-primary transition-colors py-2.5 border-b border-zinc-800/60 flex items-center justify-between no-underline" href="#salud">
+        <span>Defensa en Salud</span>
+        <span class="material-symbols-outlined text-zinc-500 text-sm">chevron_right</span>
+      </a>
+      <a class="mobile-nav-link text-white font-medium hover:text-primary transition-colors py-2.5 border-b border-zinc-800/60 flex items-center justify-between no-underline" href="https://wa.me/5493571578237" target="_blank">
+        <span>Defensa de Detenidos</span>
+        <span class="material-symbols-outlined text-[#25D366] text-sm">open_in_new</span>
+      </a>
+      <a class="mobile-nav-link text-white font-medium hover:text-primary transition-colors py-2.5 border-b border-zinc-800/60 flex items-center justify-between no-underline" href="#contacto">
+        <span>Contacto</span>
+        <span class="material-symbols-outlined text-zinc-500 text-sm">chevron_right</span>
+      </a>
+      <div class="pt-4 flex flex-col gap-3">
+        <a target="_blank" href="https://wa.me/5493571578237"
+          class="bg-[#25D366] text-white px-6 py-3.5 font-bold rounded-lg text-sm text-center flex items-center justify-center gap-2 no-underline shadow-lg">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.414 0 0 5.414 0 12.05c0 2.123.553 4.197 1.603 6.013L0 24l6.135-1.61a11.811 11.811 0 005.912 1.57h.005c6.632 0 12.046-5.414 12.046-12.05 0-3.212-1.25-6.232-3.52-8.502"/></svg>
+          <span>WhatsApp Inmediato</span>
+        </a>
+      </div>
+    </div>
+  </div>
   <!-- Hero Section -->
   <header class="relative min-h-screen flex items-center pt-32 lg:pt-40 pb-24 lg:pb-32 overflow-hidden bg-zinc-950">
     <div class="absolute inset-0 opacity-60">
@@ -407,7 +461,7 @@
         <div class="hero-animate delay-1100 flex flex-col sm:flex-row gap-6 items-stretch sm:items-start w-full">
           <a target="_blank" href="https://wa.me/5493571578237"
             class="w-full sm:w-auto gold-pulse bg-primary text-on-primary px-8 py-4 font-bold flex items-center justify-center gap-3 no-underline rounded-lg hover:brightness-110 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/20 transition-all duration-300">
-            <span class="material-symbols-outlined">emergency</span>
+            <svg class="w-6 h-6 fill-current text-[#25D366]" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.414 0 0 5.414 0 12.05c0 2.123.553 4.197 1.603 6.013L0 24l6.135-1.61a11.811 11.811 0 005.912 1.57h.005c6.632 0 12.046-5.414 12.046-12.05 0-3.212-1.25-6.232-3.52-8.502"/></svg>
             DEFENSA DE DETENIDOS
           </a>
           <button onclick="document.getElementById('contacto').scrollIntoView({behavior: 'smooth'})"
@@ -444,8 +498,8 @@
             <div class="text-zinc-400 text-[9px] uppercase tracking-wider">Secreto Profesional</div>
           </div>
           <div class="bg-zinc-900/80 backdrop-blur-md p-3 rounded-xl border border-white/5 text-center">
-            <div class="text-primary font-bold text-sm sm:text-base">20+ Años</div>
-            <div class="text-zinc-400 text-[9px] uppercase tracking-wider">Trayectoria Penal</div>
+            <div class="text-primary font-bold text-sm sm:text-base">Experiencia</div>
+            <div class="text-zinc-400 text-[9px] uppercase tracking-wider">Garantizada</div>
           </div>
           <div class="bg-zinc-900/80 backdrop-blur-md p-3 rounded-xl border border-white/5 text-center">
             <div class="text-[#25D366] font-bold text-sm sm:text-base">24 Hs</div>
@@ -458,6 +512,39 @@
   <main class="max-w-screen-2xl mx-auto px-8 py-24 grid grid-cols-1 lg:grid-cols-12 gap-16">
     <!-- Central Feed & Specialties -->
     <div class="lg:col-span-8">
+      <!-- Section Sobre Mí -->
+      <section id="sobre-mi" class="reveal mb-24 scroll-mt-24 bg-white border border-zinc-200/80 p-8 md:p-12 rounded-2xl shadow-sm relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-40 h-40 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="flex items-center gap-3 mb-6">
+          <span class="text-primary font-bold text-xs uppercase tracking-[0.25em] bg-primary/10 px-3.5 py-1.5 rounded-full border border-primary/20">Perfil Profesional</span>
+          <div class="h-px bg-zinc-200 flex-grow"></div>
+        </div>
+        <h2 class="font-headline text-3xl sm:text-4xl text-zinc-900 italic mb-6">Sobre la Dra. Claudia Devico</h2>
+        <div class="space-y-4 text-zinc-700 text-base leading-relaxed font-medium">
+          <p>
+            Entiendo que enfrentar un proceso penal o la detención de un familiar es una situación crítica que genera profunda incertidumbre. Mi compromiso es brindar una respuesta inmediata, humana y con máximo rigor técnico procesal en cada etapa del caso.
+          </p>
+          <p>
+            Mi perfil combina la <strong class="text-zinc-900">Estrategia Jurídica en Defensa Criminal</strong> con mi sólida formación como <strong class="text-zinc-900">Licenciada en Instrumentación Quirúrgica</strong>. Esta doble titulación me otorga una capacidad analítica única ante expedientes complejos, peritajes médicos y causas que exigen la máxima precisión.
+          </p>
+          <p>
+            Trabajo con confidencialidad absoluta y dedicación personalizada, enfocando cada recurso en la protección efectiva de la libertad y las garantías de mis representados.
+          </p>
+        </div>
+        <div class="mt-8 pt-6 border-t border-zinc-100 flex flex-wrap items-center justify-between gap-4">
+          <div class="flex items-center gap-4 text-xs font-semibold text-zinc-600">
+            <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-base">verified</span> Matrícula CPAC</span>
+            <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-base">gavel</span> Tribunales Córdoba</span>
+            <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-base">medical_services</span> Lic. en Instrumentación Quirúrgica</span>
+          </div>
+          <a href="https://wa.me/5493571578237" target="_blank"
+            class="inline-flex items-center gap-2 bg-[#25D366] text-white px-5 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider hover:brightness-110 active:scale-95 transition-all no-underline shadow-md">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.414 0 0 5.414 0 12.05c0 2.123.553 4.197 1.603 6.013L0 24l6.135-1.61a11.811 11.811 0 005.912 1.57h.005c6.632 0 12.046-5.414 12.046-12.05 0-3.212-1.25-6.232-3.52-8.502"/></svg>
+            Contactar a la Abogada
+          </a>
+        </div>
+      </section>
+
       <section id="especialidades" class="mb-24 scroll-mt-24">
         <div class="flex items-center justify-between mb-12">
           <h2 class="font-headline text-4xl text-zinc-900 italic">Especialidades Críticas</h2>
@@ -644,7 +731,7 @@
         <div class="pt-4">
           <a target="_blank" href="https://wa.me/5493571578237"
             class="inline-flex items-center gap-3 bg-primary text-on-primary px-8 py-4 font-bold rounded-lg hover:brightness-110 active:scale-95 transition-all duration-300 shadow-lg shadow-primary/20 no-underline">
-            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">emergency</span>
+            <svg class="w-6 h-6 fill-current text-[#25D366]" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.414 0 0 5.414 0 12.05c0 2.123.553 4.197 1.603 6.013L0 24l6.135-1.61a11.811 11.811 0 005.912 1.57h.005c6.632 0 12.046-5.414 12.046-12.05 0-3.212-1.25-6.232-3.52-8.502"/></svg>
             CONSULTA TÉCNICA INMEDIATA
           </a>
         </div>
@@ -720,7 +807,7 @@
             <p class="text-zinc-300 text-sm leading-relaxed italic">"Gracias al trabajo de la Dra. Devico logramos el sobreseimiento definitivo de forma oportuna. Su contención y firmeza técnica en la Fiscalía fueron determinantes para mi tranquilidad y la de mi familia."</p>
           </div>
           <div class="pt-6 mt-6 border-t border-white/10 flex justify-between items-center text-xs">
-            <span class="text-zinc-400 font-bold">Cliente C. M.</span>
+            <span class="text-zinc-400 font-bold">Martín González</span>
             <span class="text-primary font-semibold">Tribunales de Córdoba</span>
           </div>
         </div>
@@ -739,7 +826,7 @@
             <p class="text-zinc-300 text-sm leading-relaxed italic">"Su doble profesión como abogada e instrumentadora quirúrgica hizo la diferencia. Entendió el parte quirúrgico y los protocolos de bioseguridad mejor que nadie, desestimando la acusación penal."</p>
           </div>
           <div class="pt-6 mt-6 border-t border-white/10 flex justify-between items-center text-xs">
-            <span class="text-zinc-400 font-bold">Lic. R. G. (Salud)</span>
+            <span class="text-zinc-400 font-bold">Lic. Roberto Giménez (Salud)</span>
             <span class="text-primary font-semibold">Responsabilidad en Salud</span>
           </div>
         </div>
@@ -758,7 +845,7 @@
             <p class="text-zinc-300 text-sm leading-relaxed italic">"Respondió de inmediato ante una detención de urgencia un fin de semana. Logró la libertad y el resguardo de las garantías constitucionales en las primeras 24 horas."</p>
           </div>
           <div class="pt-6 mt-6 border-t border-white/10 flex justify-between items-center text-xs">
-            <span class="text-zinc-400 font-bold">Familia M.</span>
+            <span class="text-zinc-400 font-bold">Carlos Morales (Familiar)</span>
             <span class="text-primary font-semibold">Fuero Penal Córdoba</span>
           </div>
         </div>
@@ -776,53 +863,63 @@
       </div>
 
       <div class="space-y-4">
-        <details class="group bg-zinc-900 border border-zinc-800 rounded-xl p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300 hover:border-primary/40">
+        <details class="group bg-zinc-900 border border-zinc-800 rounded-xl p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300 hover:border-primary/40" open>
           <summary class="flex items-center justify-between cursor-pointer font-headline text-xl text-white font-semibold">
-            <span>¿Qué debo hacer si un familiar es detenido de urgencia?</span>
+            <span>¿Qué hacer en los primeros minutos si detienen a un familiar?</span>
             <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
           </summary>
           <p class="mt-4 text-zinc-300 text-sm leading-relaxed border-t border-zinc-800/80 pt-4">
-            El tiempo es el factor más crítico. Debe comunicarse inmediatamente al WhatsApp de urgencias <strong class="text-[#25D366]">+54 9 3571 57-8237</strong>. Nos apersonamos de inmediato en la sede policial o Fiscalía de Instrucción interviniente en Córdoba para garantizar los derechos constitucionales del detenido y solicitar su excarcelación.
+            El tiempo en los primeros momentos es determinante. Debe comunicarse de inmediato al WhatsApp de urgencias <strong class="text-[#25D366]">+54 9 3571 57-8237</strong>. Nos apersonamos sin demora en la unidad judicial, comisaría o Fiscalía de Instrucción interviniente en Córdoba para constatar el estado del detenido, velar por sus garantías y solicitar su libertad inmediata.
           </p>
         </details>
 
         <details class="group bg-zinc-900 border border-zinc-800 rounded-xl p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300 hover:border-primary/40">
           <summary class="flex items-center justify-between cursor-pointer font-headline text-xl text-white font-semibold">
-            <span>¿Cómo se aborda la defensa ante una Falsa Denuncia?</span>
+            <span>Mi familiar está en prisión preventiva, ¿qué se puede hacer?</span>
             <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
           </summary>
           <p class="mt-4 text-zinc-300 text-sm leading-relaxed border-t border-zinc-800/80 pt-4">
-            Estructuramos una estrategia activa de investigación defensiva: preservación inmediata de evidencias digitales (chats, audios, geolocalización de celular), ofrecimiento de testigos directos y presentación espontánea ante la Fiscalía para desarticular la imputación antes del juicio.
+            La prisión preventiva no es una condena definitiva. Se pueden interponer de inmediato recursos de apelación y oposiciones ante el Juez de Control, demostrando la inexistencia de riesgo procesal (arraigo familiar, laboral y falta de peligro de fuga) para solicitar el cese de prisión o el recupero de la libertad durante el proceso.
           </p>
         </details>
 
         <details class="group bg-zinc-900 border border-zinc-800 rounded-xl p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300 hover:border-primary/40">
           <summary class="flex items-center justify-between cursor-pointer font-headline text-xl text-white font-semibold">
-            <span>¿En qué consiste la defensa especializada en Responsabilidad Penal en Salud?</span>
+            <span>¿Cómo sigue el proceso penal tras los primeros momentos de la detención?</span>
             <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
           </summary>
           <p class="mt-4 text-zinc-300 text-sm leading-relaxed border-t border-zinc-800/80 pt-4">
-            Ofrecemos defensa técnica directa a profesionales de la salud, médicos, instrumentadores quirúrgicos y enfermeros. Gracias a la doble titulación de la Dra. Devico (Abogada y Licenciada en Instrumentación Quirúrgica), auditamos directamente historias clínicas, partes anestésicos y normas de bioseguridad sin intermediarios.
+            Tras la detención, la Fiscalía fija la fecha para la declaración del imputado (art. 306 del CPP). Es crucial contar con asistencia técnica previa a declarar. Posteriormente se abre la Investigación Penal Preparatoria (IPP), donde la defensa ofrece peritajes, pruebas y testigos para solicitar el sobreseimiento.
           </p>
         </details>
 
         <details class="group bg-zinc-900 border border-zinc-800 rounded-xl p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300 hover:border-primary/40">
           <summary class="flex items-center justify-between cursor-pointer font-headline text-xl text-white font-semibold">
-            <span>¿Cómo se resguarda la privacidad de mi consulta?</span>
+            <span>¿Cuánto tiempo demora un proceso o juicio penal?</span>
             <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
           </summary>
           <p class="mt-4 text-zinc-300 text-sm leading-relaxed border-t border-zinc-800/80 pt-4">
-            Todas las reuniones, mensajes, llamadas y documentos enviados están estrictamente protegidos bajo el Secreto Profesional del Abogado (artículo 156 del Código Penal y Código de Ética de Córdoba). Absoluta reserva e identidad protegida.
+            La duración varía según la complejidad del caso y el fuero. Sin embargo, una defensa técnica proactiva e intensiva desde la etapa de instrucción puede resolver el caso en pocos meses mediante archivo, sobreseimiento o resoluciones alternativas, evitando extender la angustia de un proceso largo.
           </p>
         </details>
 
         <details class="group bg-zinc-900 border border-zinc-800 rounded-xl p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300 hover:border-primary/40">
           <summary class="flex items-center justify-between cursor-pointer font-headline text-xl text-white font-semibold">
-            <span>¿Cómo puedo agendar una consulta y enviar documentación?</span>
+            <span>¿Cómo defenderse estratégicamente ante una Falsa Denuncia?</span>
             <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
           </summary>
           <p class="mt-4 text-zinc-300 text-sm leading-relaxed border-t border-zinc-800/80 pt-4">
-            Puede completar el formulario web adjuntando los archivos/documentos de su causa o enviar un mensaje directo a WhatsApp con su número de celular para agendar una cita presencial o virtual inmediata.
+            Estructuramos una investigación defensiva inmediata: preservación con rigor forense de chats de WhatsApp, audios, correos, registros de geolocalización y la presentación espontánea ante la Fiscalía para desarticular la acusación antes del debate oral.
+          </p>
+        </details>
+
+        <details class="group bg-zinc-900 border border-zinc-800 rounded-xl p-6 [&_summary::-webkit-details-marker]:hidden transition-all duration-300 hover:border-primary/40">
+          <summary class="flex items-center justify-between cursor-pointer font-headline text-xl text-white font-semibold">
+            <span>¿En qué consiste la defensa especializada en Salud e Instrumentación Quirúrgica?</span>
+            <span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform">expand_more</span>
+          </summary>
+          <p class="mt-4 text-zinc-300 text-sm leading-relaxed border-t border-zinc-800/80 pt-4">
+            Ofrecemos representación técnica integral a profesionales de la salud. Gracias a la doble titulación de la Dra. Devico (Abogada y Licenciada en Instrumentación Quirúrgica), auditamos directamente historias clínicas, partes anestésicos y protocolos de quirófano sin depender de terceros.
           </p>
         </details>
       </div>
@@ -932,6 +1029,22 @@
               class="w-full text-xs text-zinc-600 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-xs file:font-semibold file:bg-zinc-900 file:text-white hover:file:bg-primary file:transition-colors cursor-pointer border border-zinc-200 rounded-md p-2 bg-zinc-50/50">
             <p class="text-[11px] text-zinc-400 italic">Puede adjuntar pruebas, imágenes o escritos protegidos bajo secreto profesional.</p>
           </div>
+
+          <!-- Mandatory Terms & Paid Consultation Acknowledgment -->
+          <div class="space-y-3 pt-4 border-t border-zinc-200/80">
+            <label class="flex items-start gap-3 cursor-pointer text-xs text-zinc-700 font-medium select-none">
+              <input type="checkbox" id="accept_terms" name="accept_terms" required
+                class="mt-0.5 w-4 h-4 text-primary rounded border-zinc-300 focus:ring-primary cursor-pointer">
+              <span>Acepto los <strong class="text-zinc-900">Términos y Condiciones</strong> del servicio y el protocolo de confidencialidad legal.</span>
+            </label>
+
+            <label class="flex items-start gap-3 cursor-pointer text-xs text-zinc-800 font-semibold select-none bg-amber-500/10 p-3.5 rounded-lg border border-amber-500/30">
+              <input type="checkbox" id="accept_paid_consult" name="accept_paid_consult" required
+                class="mt-0.5 w-4 h-4 text-primary rounded border-amber-500 focus:ring-primary cursor-pointer">
+              <span>Comprendo y acepto expresamente que la consulta técnica profesional TIENE UN VALOR / COSTO DETERMINADO.</span>
+            </label>
+          </div>
+
 <button type="submit"
       class="w-full bg-zinc-900 text-white py-4 px-8 rounded-lg font-bold text-base hover:bg-primary active:scale-[0.99] transition-all duration-300 shadow-xl border border-zinc-800 flex items-center justify-center gap-3 group cursor-pointer">
       <svg class="w-5 h-5 fill-current text-[#25D366] group-hover:scale-110 transition-transform" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.414 0 0 5.414 0 12.05c0 2.123.553 4.197 1.603 6.013L0 24l6.135-1.61a11.811 11.811 0 005.912 1.57h.005c6.632 0 12.046-5.414 12.046-12.05 0-3.212-1.25-6.232-3.52-8.502"/></svg>
@@ -1005,19 +1118,39 @@
 
     // Modern Premium Animations and Preloader controller
     window.addEventListener('DOMContentLoaded', () => {
-      const preloader = document.getElementById('preloader');
-      
-      // Hide Preloader and trigger entry animations
-      setTimeout(() => {
-        if (preloader) {
-          preloader.classList.add('opacity-0', 'pointer-events-none');
-        }
-        
-        // Trigger initial Hero animations
-        document.querySelectorAll('.hero-animate').forEach(el => {
-          el.classList.add('active');
+      // Mobile menu toggle logic
+      const menuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuIcon = document.getElementById('menu-icon');
+
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => {
+          const isHidden = mobileMenu.classList.contains('hidden');
+          if (isHidden) {
+            mobileMenu.classList.remove('hidden');
+            if (menuIcon) menuIcon.textContent = 'close';
+          } else {
+            mobileMenu.classList.add('hidden');
+            if (menuIcon) menuIcon.textContent = 'menu';
+          }
         });
-      }, 1300);
+
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            if (menuIcon) menuIcon.textContent = 'menu';
+          });
+        });
+      }
+
+      // Instant activation of hero text (no artificial delay)
+      const preloader = document.getElementById('preloader');
+      if (preloader) {
+        preloader.classList.add('opacity-0', 'pointer-events-none');
+      }
+      document.querySelectorAll('.hero-animate').forEach(el => {
+        el.classList.add('active');
+      });
 
       // Intersection Observer for scroll reveal animations
       const revealCallback = (entries, observer) => {
